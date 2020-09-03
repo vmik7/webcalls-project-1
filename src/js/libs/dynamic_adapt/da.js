@@ -1,5 +1,3 @@
-
-//Dynamic Adapt (https://www.youtube.com/watch?v=QKuMr575vlQ)
 (function () {
 	let originalPositions = [];
 	let daElements = document.querySelectorAll('[data-da]');
