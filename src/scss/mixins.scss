@@ -1,4 +1,5 @@
 // Mixin for quick including fonts .woff and .woff2 in gulpfile.js
+
 @mixin font($font_name, $file_name, $weight, $style) {
     @font-face {
         font-family: $font_name;
@@ -10,12 +11,14 @@
 }
 
 // Mixin for custom outline on focused elements
+
 @mixin focus-outline() {
     outline: 3px solid $outline-color;
     outline-offset: 2px;
 }
 
 // Mixin for visually-hidden class
+
 @mixin visually-hidden() {
     position: absolute;
     width: 1px;
