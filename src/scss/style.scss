@@ -1,75 +1,108 @@
-// === MIXINS ==========================================
+
+
+
+// MIXINS 
+
+
+
 @import 'mixins';
-// ==========================================
 
 
-// === FONTS ==========================================
-// Including fonts
-// &display=swap&subset=cyrillic-ext  -  Google Fonts cyrillic (suffix on URL)
+
+// FONTS
+
+
+
+// Google fonts imports
+
+// Cyrillic support (add this suffix on URL)
+// &display=swap&subset=cyrillic-ext
+
+// Including file with @font-face
 
 @import 'fonts';
 
+
+
+// VARIABLES
+
+
+
 // Default font
+
 $defaultFont: "Arial";
-// ==========================================
 
+// Maximum container width
 
-// === VARIABLES ==========================================
-$maxContainerWidth: 1170;
-$md1: $maxContainerWidth + 12;
+$max-container-width: 1170;
+
+// Media breakpoints
+
+$md1: $max-container-width + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
-$outlineColor: #42a0da;
-// ==========================================
+
+// Color for custom outline
+
+$outline-color: #42a0da;
 
 
-// === NULL & GENERAL ==========================================
+
+// NULL & GENERAL
+
+
+
 @import 'null';
+
 body {
     font-family: $defaultFont, sans-serif;
     font-size: 14px;
     color: #000;
+
+    // _lock class for antiscroll when menu is opened
+
     &._lock {
         overflow: hidden;
     }
+
+    // Sticky footer
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .main {
+        flex: 1;
+    }
 }
+
+// _visually-hidden class for elements like default checkbox (it should not be visible, but it should be!)
+
 ._visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include visually-hidden();
 }
-._display-none {
-    display: none;
-}
+
+// _focus-outline class for elements, needed custom outline
+
 ._focus-outline:focus {
-    outline: 3px solid $outlineColor;
-    outline-offset: 2px;
+    @include focus-outline();
 }
+
+// setting 'outline: none' for elements, which are on focus, but not by keyboard
+
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
 
-// Sticky footer
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.main {
-    flex: 1;
-}
-// ==========================================
 
 
-// === GRID & CONTAINER ==========================================
+// GRID & CONTAINER
+
+
+
 ._container {
-    max-width: $maxContainerWidth + px;
+    max-width: $max-container-width + px;
     margin: 0 auto;
     @media screen and (max-width: $md1+px) {
         max-width: 970px;
@@ -82,145 +115,23 @@ body {
         padding: 0 10px;
     }
 }
-// ==========================================
 
 
-// === FORMS & OTHER STYLES ==========================================
+
+// FORMS & OTHER STYLES
+
+
+
 @import 'forms';
 @import 'checkbox';
 @import 'popup';
-// ==========================================
+
+@import 'header';
+@import 'footer';
 
 
 
-
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    background: tomato;
-
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-    }
-
-    &__logo {
-    }
-
-    &__menu {
-    }
-}
-.logo {
-}
+// OTHER
 
 
 
-
-.menu {
-
-    &__burger {
-        display: none;
-    }
-
-    &__body {
-    }
-
-    &__list {
-        display: flex;
-
-        li {
-            margin-right: 20px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-
-    &__link {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 0.01em;
-    }
-}
-
-
-
-
-@media screen and (max-width: 767px) {
-    .menu {
-        &__burger {
-            display: block;
-            position: relative;
-            width: 30px;
-            height: 20px;
-
-            span {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background: #fff;
-
-                &:nth-child(1) {
-                    top: 0;
-                }
-                &:nth-child(2) {
-                    top: 9px;
-                }
-                &:nth-child(3) {
-                    bottom: 0;
-                }
-            }
-        }
-    
-        &__body {
-            display: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgb(57, 182, 7);
-        }
-    
-        &__list {
-            display: flex;
-    
-            li {
-                margin-right: 20px;
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-    
-        &__link {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 0.01em;
-        }
-    }
-}
-
-
-
-
-.main {
-    margin-top: 100px;
-    &__wrapper {
-    }
-}
-.text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 40px;
-}

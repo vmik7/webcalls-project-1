@@ -11,7 +11,7 @@
 
 // Mixin for custom outline on focused elements
 @mixin focus-outline() {
-    outline: 3px solid $outlineColor;
+    outline: 3px solid $outline-color;
     outline-offset: 2px;
 }
 
