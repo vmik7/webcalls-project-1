@@ -53,7 +53,8 @@ function browserSyncFunction() {
             baseDir: './' + projectFolder + '/'
         },
         port: 3000,
-        notify: false
+        notify: false,
+        online: true
     });
 }
 
