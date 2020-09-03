@@ -18,3 +18,5 @@
 
 
 
+let menuBurger = document.querySelector('.menu__burger');
+let menuBody = document.querySelector('.menu__burger');
