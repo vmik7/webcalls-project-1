@@ -8,3 +8,21 @@
         font-style: #{$style};
     }
 }
+
+// Mixin for custom outline on focused elements
+@mixin focus-outline() {
+    outline: 3px solid $outlineColor;
+    outline-offset: 2px;
+}
+
+// Mixin for visually-hidden class
+@mixin visually-hidden() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
