@@ -1,0 +1,30 @@
+
+// Page
+
+.page {
+
+    // Body
+
+    &__body {
+        font-family: $defaultFont, sans-serif;
+        color: #000;
+
+        // _lock class adding when some menu is opened (to stop scroll)
+        &._lock {
+            overflow: hidden;
+        }
+
+        // For sticky footer
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    // Main
+
+    &__main {
+        
+        // For sticky footer
+        flex-grow: 1;
+    }
+}

@@ -10,7 +10,6 @@
 // FONTS
 
 // File with @font-face rules
-
 @import 'fonts';
 
 // Google fonts imports
@@ -23,19 +22,15 @@
 // VARIABLES
 
 // Default font
-
 $defaultFont: "Arial";
 
 // Color for custom outline
-
 $outline-color: #42a0da;
 
 // Maximum container width
-
 $max-container-width: 1170;
 
 // Media breakpoints
-
 $md1: $max-container-width + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -47,54 +42,27 @@ $md4: 479.98;
 
 @import 'null';
 
-body {
-    font-family: $defaultFont, sans-serif;
-    font-size: 14px;
-    color: #000;
-
-    // _lock class for antiscroll when menu is opened
-
-    &._lock {
-        overflow: hidden;
-    }
-
-    // Sticky footer
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    main {
-        flex: 1;
-    }
-}
-
 // _visually-hidden class for elements like default checkbox (it should not be visible, but it should be!)
-
 ._visually-hidden {
     @include visually-hidden();
 }
 
 // _focus-outline class for elements, needed custom outline
-
 ._focus-outline:focus {
     @include focus-outline();
 }
 
 // setting custom focus outline for some elements
-
 a, link, button, input, select, textarea {
     @include focus-outline();
 }
 
 // _no-focus class for elements, which not needed focus
-
 ._no-focus-outline:focus {
     @include no-focus-outline();
 }
 
 // remove focus outline for elements, which are on focus, but not by TAB key
-
 .js-focus-visible :focus:not(.focus-visible) {
     @include no-focus-outline();
 }
@@ -120,14 +88,13 @@ a, link, button, input, select, textarea {
 
 
 
-// FORMS & OTHER STYLES
+// BLOCKS
 
-@import 'forms';
-@import 'checkbox';
-@import 'popup';
-
-@import 'header';
-@import 'footer';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/burger-icon';
+@import 'blocks/check';
+@import 'blocks/footer';
 
 
 
