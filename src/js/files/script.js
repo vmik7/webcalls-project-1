@@ -1,11 +1,14 @@
 
 // Burger interactive
 
-const menuBurger = document.querySelector('.menu__burger');
+const menuButton = document.querySelector('.menu__button');
 const menuBody = document.querySelector('.menu__body');
+const pageBody = document.querySelector('.page__body');
 
-menuBurger.addEventListener('click', function(){
-    menuBurger.classList.toggle('_active');
-    menuBody.classList.toggle('_active');
-    document.body.classList.toggle('_lock');
+menuButton.addEventListener('click', () => {
+    let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+    menuButton.setAttribute('aria-expanded', !expanded);
+    menuButton.classList.toggle('menu__button_active');
+    menuBody.classList.toggle('menu__body_open');
+    pageBody.classList.toggle('page__body_lock');
 });

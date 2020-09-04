@@ -9,12 +9,13 @@
         font-family: $defaultFont, sans-serif;
         color: #000;
 
-        // _lock class adding when some menu is opened (to stop scroll)
-        &._lock {
+        // Lock modificator when some menu is opened (to stop scroll)
+
+        &_lock {
             overflow: hidden;
         }
 
-        // For sticky footer
+        // for sticky footer
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -24,7 +25,7 @@
 
     &__main {
         
-        // For sticky footer
+        // for sticky footer
         flex-grow: 1;
     }
 }
