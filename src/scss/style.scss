@@ -51,7 +51,7 @@ $md4: 479.98;
 }
 
 // setting custom focus outline for some elements
-a, link, button, input, select, textarea {
+a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
     @include focus-outline();
 }
 
