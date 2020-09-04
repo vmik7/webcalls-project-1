@@ -88,9 +88,11 @@ a, link, button, input, select, textarea {
 
 // BLOCKS
 
+@import 'blocks/page';
+@import 'blocks/check';
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/burger-icon';
-@import 'blocks/check';
+@import 'blocks/main';
 @import 'blocks/footer';
 
