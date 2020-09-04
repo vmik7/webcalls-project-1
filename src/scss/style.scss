@@ -3,34 +3,32 @@
 
 // MIXINS 
 
-
-
 @import 'mixins';
 
 
 
 // FONTS
 
+// File with @font-face rules
 
+@import 'fonts';
 
 // Google fonts imports
 
 // Cyrillic support (add this suffix on URL)
 // &display=swap&subset=cyrillic-ext
 
-// Including file with @font-face
-
-@import 'fonts';
-
 
 
 // VARIABLES
 
-
-
 // Default font
 
 $defaultFont: "Arial";
+
+// Color for custom outline
+
+$outline-color: #42a0da;
 
 // Maximum container width
 
@@ -43,15 +41,9 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-// Color for custom outline
-
-$outline-color: #42a0da;
-
 
 
 // NULL & GENERAL
-
-
 
 @import 'null';
 
@@ -89,17 +81,27 @@ body {
     @include focus-outline();
 }
 
-// setting 'outline: none' for elements, which are on focus, but not by keyboard
+// setting custom focus outline for some elements
+
+a, link, button, input, select, textarea {
+    @include focus-outline();
+}
+
+// _no-focus class for elements, which not needed focus
+
+._no-focus-outline:focus {
+    @include no-focus-outline();
+}
+
+// remove focus outline for elements, which are on focus, but not by TAB key
 
 .js-focus-visible :focus:not(.focus-visible) {
-    outline: none;
+    @include no-focus-outline();
 }
 
 
 
 // GRID & CONTAINER
-
-
 
 ._container {
     max-width: $max-container-width + px;
@@ -120,8 +122,6 @@ body {
 
 // FORMS & OTHER STYLES
 
-
-
 @import 'forms';
 @import 'checkbox';
 @import 'popup';
@@ -132,6 +132,4 @@ body {
 
 
 // OTHER
-
-
 
