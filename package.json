@@ -9,6 +9,8 @@
   "author": "vmik7",
   "license": "ISC",
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "blocking-elements": "^0.1.1",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
     "focus-visible": "^5.1.0",
@@ -28,7 +30,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "inert-polyfill": "^0.2.5"
+    "wicg-inert": "^3.0.3"
   },
   "dependencies": {}
 }

@@ -12,9 +12,11 @@
 
 @@include('../../node_modules/focus-visible/dist/focus-visible.js', {})
 
-// Inert-polyfill (https://www.npmjs.com/package/inert-polyfill)
+// Blocking-elements (https://github.com/PolymerLabs/blocking-elements)
 
-@@include('../../node_modules/inert-polyfill/inert-polyfill.js', {})
+@@include('../../node_modules/babel-polyfill/dist/polyfill.js', {})
+@@include('../../node_modules/wicg-inert/dist/inert.js', {})
+@@include('../../node_modules/blocking-elements/dist/blocking-elements.js', {})
 
 // Other scripts
 
