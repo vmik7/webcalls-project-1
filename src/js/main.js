@@ -12,6 +12,10 @@
 
 @@include('../../node_modules/focus-visible/dist/focus-visible.js', {})
 
+// Inert-polyfill (https://www.npmjs.com/package/inert-polyfill)
+
+@@include('../../node_modules/inert-polyfill/inert-polyfill.js', {})
+
 // Other scripts
 
 @@include('files/script.js', {})
