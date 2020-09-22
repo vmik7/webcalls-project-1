@@ -1,7 +1,7 @@
 {
-  "name": "personalblog",
+  "name": "WebCalls",
   "version": "1.0.0",
-  "description": "Personal blog web-site layout",
+  "description": "WebCalls web-site layout (project 1)",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
