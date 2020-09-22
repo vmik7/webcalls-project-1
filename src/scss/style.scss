@@ -19,20 +19,7 @@
 
 // VARIABLES
 
-// Default font
-$defaultFont: "Arial";
-
-// Color for custom outline
-$outline-color: #42a0da;
-
-// Maximum container width
-$max-container-width: 1170;
-
-// Media breakpoints
-$md1: $max-container-width + 12;
-$md2: 992;
-$md3: 768;
-$md4: 480;
+@import 'variables';
 
 
 
@@ -83,15 +70,3 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
         padding: 0 10px;
     }
 }
-
-
-
-// BLOCKS
-
-@import 'blocks/page';
-@import 'blocks/check';
-@import 'blocks/header';
-@import 'blocks/menu';
-@import 'blocks/main';
-@import 'blocks/footer';
-

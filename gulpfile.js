@@ -7,14 +7,16 @@ let path = {
     build: {
         html: projectFolder + '/',
         css: projectFolder + '/css/',
+        bem: projectFolder + '/css/blocks/',
         js: projectFolder + '/js/',
         img: projectFolder + '/img/',
         fonts: projectFolder + '/fonts/'
     },
     src: {
-        html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],
+        html: sourceFolder + '/*.html',
         css: sourceFolder + '/scss/style.scss',
-        js: sourceFolder + '/js/main.js',
+        bem: sourceFolder + '/scss/blocks/*.scss',
+        js: sourceFolder + '/js/*.js',
         img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
         fonts: sourceFolder + '/fonts/*.ttf'
     },
@@ -24,7 +26,13 @@ let path = {
         js: sourceFolder + '/js/**/*.js',
         img: sourceFolder + '/img/**/*.{ipg,png,svg,gif,ico,webp}',
     },
-    clean: './' + projectFolder + '/'
+    clean: [
+        './' + projectFolder + '/*.html',
+        './' + projectFolder + '/css/',
+        './' + projectFolder + '/js/',
+        './' + projectFolder + '/img/',
+        './' + projectFolder + '/fonts/'
+    ]
 }
 
 let { src, dest } = require('gulp');
@@ -61,12 +69,24 @@ function browserSyncFunction() {
 function html() {
     return src(path.src.html)
         .pipe(fileInclude())
-        .pipe(webpHtml())
+        //.pipe(webpHtml())
         .pipe(dest(path.build.html))
         .pipe(browserSync.stream());
 }
 
 function css() {
+    src(path.src.bem)
+        .pipe(scss({
+            outputStyle: 'expanded'
+        }))
+        .pipe(groupMedia())
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 5 versions'],
+            cascade: true
+        }))
+        //.pipe(webpCss())
+        .pipe(dest(path.build.bem))
+        .pipe(browserSync.stream());
     return src(path.src.css)
         .pipe(scss({
             outputStyle: 'expanded'
@@ -76,13 +96,13 @@ function css() {
             overrideBrowserslist: ['last 5 versions'],
             cascade: true
         }))
-        .pipe(webpCss())
+        //.pipe(webpCss())
         .pipe(dest(path.build.css))
-        .pipe(rename({
-            extname: '.min.css'
-        }))
-        .pipe(cleanCss())
-        .pipe(dest(path.build.css))
+        // .pipe(rename({
+        //     extname: '.min.css'
+        // }))
+        // .pipe(cleanCss())
+        // .pipe(dest(path.build.css))
         .pipe(browserSync.stream());
 }
 
@@ -90,11 +110,11 @@ function js() {
     return src(path.src.js)
         .pipe(fileInclude())
         .pipe(dest(path.build.js))
-        .pipe(uglify())
-        .pipe(rename({
-            extname: '.min.js'
-        }))
-        .pipe(dest(path.build.js))
+        // .pipe(uglify())
+        // .pipe(rename({
+        //     extname: '.min.js'
+        // }))
+        // .pipe(dest(path.build.js))
         .pipe(browserSync.stream());
 }
 

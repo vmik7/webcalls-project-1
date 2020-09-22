@@ -1,0 +1,353 @@
+/* my styles */
+
+hr {
+  width: 100%;
+}
+
+.rui-navbar .media .media-title {
+  font-size: 13px;
+}
+
+.rui-navbar .media .media-img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+
+.rui-navbar .media .media-img:before {
+  top: 32px;
+}
+
+.rui-navbar .media--sm .media-img {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+}
+
+.rui-navbar-top .rui-yaybar-toggle span:before,
+.rui-navbar-top .rui-yaybar-toggle span::after {
+  transform: translateX(0px);
+}
+
+.rui-navbar-mobile .rui-yaybar-toggle span:before,
+.rui-navbar-mobile .rui-yaybar-toggle span::after {
+  transform: translateX(0px);
+}
+
+.rui-navbar-mobile .media.media-filled>.media-icon {
+  opacity: 1;
+  visibility: visible;
+  color: #393f49;
+}
+
+.rui-navbar-mobile .rui-navbar-head .rui-navbar-toggle {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.rui-navbar .rui-navbar-avatar>img,
+.rui-navbar .rui-navbar-avatar>.badge {
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rui-navbar .rui-navbar-avatar.collapsed>img,
+.rui-navbar .rui-navbar-avatar.collapsed>.badge {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rui-navbar-mobile>.rui-navbar-collapse {
+  background: #fff;
+}
+
+.rui-navbar .rui-navbar-avatar>.navbar-close-icon {
+  transition: 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
+
+.rui-navbar .rui-navbar-avatar.collapsed>.navbar-close-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media all and (min-width: 1200px) {
+  .rui-navbar .rui-navbar-avatar>.navbar-close-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .rui-navbar .rui-navbar-avatar>img,
+  .rui-navbar .rui-navbar-avatar>.badge {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.yay-hide .yaybar.rui-yaybar .rui-yaybar-icons {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.yaybar.yay-shrink~.content-wrap {
+  will-change: margin-left, margin-right;
+  transition: margin-left 0.15s, margin-right 0.15s;
+}
+
+.float-call {
+  z-index: 12;
+  background-color: #292f38;
+  transform: translateX(calc(100% + 100px));
+  color: #c7d1db;
+}
+
+.nav-float {
+  z-index: 1000;
+}
+
+.nav-float .rui-yaybar-icons {
+  transform: none;
+  color: #c7d1db;
+}
+
+.nav-float.show {
+  pointer-events: none;
+}
+
+.nav-float.show>* {
+  pointer-events: all;
+}
+
+.rui-navbar .notice-list {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .float-call {
+    left: 60px;
+    width: calc(100vw - 60px);
+    z-index: -1;
+  }
+
+  .nav-float.show.expand {
+    max-width: calc(100vw - 60px);
+    transition: max-width 0.3s 0s;
+  }
+
+  .nav-float.show.expand .float-call {
+    z-index: 13;
+  }
+
+  .nav-float .rui-yaybar-icons {
+    margin-left: auto;
+    margin-right: 0;
+    width: 80px;
+    transform: none;
+  }
+
+  .nav-float .switch-wrap {
+    width: calc(100vw - 60px);
+    transform: translate(calc(50% - 40px), calc(-50% + 42px));
+    justify-content: space-between;
+    padding: 20px 26px;
+    background: #292f38;
+  }
+
+  .nav-float.expand .switch-wrap {
+    transform: translate(calc(82px - 50vw), calc(50% - 20px));
+  }
+
+  .nav-float.expand .custom-switch {
+    position: relative;
+    transform: translateX(-10px);
+  }
+
+  .nav-float.expand .rui-yaybar-icons {
+    transform: none;
+  }
+
+  .nav-float.show.expand {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 767px) {
+  .float-call {
+    width: 280px;
+    left: auto;
+    right: 0;
+    transform: translateX(calc(100% + 100px));
+    z-index: 13;
+  }
+
+  .nav-float.expand .rui-yaybar-icons {
+    transform: translateX(-104%);
+  }
+
+  .nav-float .switch-wrap {
+    width: 280px;
+    transform: translate(calc(50% - 40px), calc(-50% + 42px));
+  }
+
+  .nav-float.expand .switch-wrap {
+    transform: translate(-10px, calc(-50% + 42px));
+  }
+}
+
+@media (min-width: 1200px) {
+  .float-call {
+    position: absolute;
+    transform: none;
+    width: 280px;
+    z-index: 111;
+    left: 0;
+    right: auto;
+    bottom: 60px;
+    height: calc(100vh - 130px);
+    transform: translateX(100px);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0s 0s, transform 0s 0s;
+  }
+
+  /* .float-call .collapse-content {
+        overflow: hidden;
+    } */
+
+  .rui-yaybar {
+    display: flex;
+  }
+
+  .nav-float .rui-yaybar-icons {
+    transform: none;
+  }
+
+  .nav-float~.content-wrap {
+    will-change: margin-right;
+    transition: margin-right 0.15s;
+  }
+
+  .nav-float.show~.content-wrap {
+    margin-right: 80px;
+  }
+
+  .nav-float.expand~.content-wrap {
+    margin-right: 280px;
+  }
+
+  .nav-float.show.expand .float-call {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.15s 0.15s, transform 0s 0s;
+  }
+}
+
+.rate {
+  color: #fdbf21;
+  margin-top: -2px;
+}
+
+.rate svg {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+}
+
+.sidebar-list-item+.sidebar-list-item {
+  margin-top: 10px;
+}
+
+.sidebar-list-item {
+  cursor: pointer;
+}
+
+.sidebar-list-item .badge {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-list-item .badge.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-list-item .icon {
+  transition: 0.3s;
+}
+
+.sidebar-list-item .icon-wrapper {
+  width: 43px;
+  height: 24px;
+  padding: 0;
+  margin-left: -10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-list-item .icon-wrapper svg {
+  fill: #fff;
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-list-item:hover .icon {
+  opacity: 1;
+  visibility: visible;
+  filter: grayscale(0);
+}
+
+.sidebar-bottom-switch {
+  margin-left: 28px;
+}
+
+@media (min-width: 767px) {
+  .sidebar-list-item .icon {
+    opacity: 0.5;
+    filter: grayscale(1);
+    /* visibility: hidden; */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sidebar-bottom>* {
+    width: 40px;
+    margin-left: 8%;
+    margin-right: 5%;
+  }
+
+  .sidebar-bottom .switch-wrap {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+
+  .nav-float.expand .sidebar-bottom .switch-wrap {
+    transform: translateX(calc(25vw + 8px));
+  }
+
+  .nav-float.expand .sidebar-bottom-switch {
+    margin-left: 3px;
+  }
+
+  .sidebar-bottom-switch {
+    /* margin-left: 40px; */
+  }
+
+  .float-call {
+    height: calc(100vh - 125px);
+  }
+}

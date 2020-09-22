@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Главная</title>
-    <meta name="description" content="RootUI - clean and powerful solution for your Dashboards, Administration areas."/>
-    <meta name="keywords" content="admin, dashboard, template, react, reactjs, html, jquery, clean"/>
-    <meta name="author" content="nK"/>
+    <title>Операторы</title>
+    <meta name="description" content="WebCalls - Сервис для звонков посетителям Вашего сайта"/>
+    <meta name="keywords" content="keys"/>
+    <meta name="author" content="WebCalls"/>
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400%7cOpen+Sans:300,400,600%7cPT+Serif:400i"/>
     <link rel="stylesheet" href="assets/css/bootstrap-custom.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>
     <link rel="stylesheet" href="assets/vendor/overlayscrollbars/css/OverlayScrollbars.css"/>
     <link rel="stylesheet" href="assets/css/yaybar.css"/>
     <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.css"/>
     <link rel="stylesheet" href="assets/vendor/emojionearea/dist/emojionearea.css"/>
     <link rel="stylesheet" href="assets/vendor/swiper/css/swiper.min.css"/>
     <link rel="stylesheet" href="assets/vendor/chartist/dist/chartist.css"/>
+    <link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css"/>
     <link rel="stylesheet" href="assets/vendor/jqvmap/dist/jqvmap.css"/>
     <link rel="stylesheet" href="assets/css/rootui.css"/>
     <link rel="stylesheet" href="assets/css/custom.css"/>
@@ -43,18 +45,394 @@
     <div class="yay-wrap-menu">
         <div class="yaybar-wrap">
             <ul>
-                <li class="yayabar-website">
-                    <a href="dashboard.html">
+                <li class="yayabar-website mb-15">
+                    <a href="dasboard.html" class="yay-sub-toggle">
                         <span class="yay-icon">
                             <span class="media">
-                                <span class="media-img">
-                                    W
+                                <span class="media-img bg-transparent">
+                                    <img src="assets/images/web-logo-1.svg" alt="">
                                 </span>
                             </span>
+                            <!-- <span data-feather="home" class="rui-icon rui-icon-stroke-1_5"></span> -->
                         </span>
-                        <span>Сайт не выбран</span>
+                        <span>aerobika.by</span>
+                        <!-- <span class="rui-yaybar-circle"></span> -->
+                        <span class="yay-icon-collapse">
+                            <span data-feather="settings" class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="404.html">thaisporttour.com</a></li>
+                        <li><a href="404.html">vk.com</a></li>
+                        <li><a href="404.html">google.com</a></li>
+                        <li><a href="404.html">facebook.com</a></li>
+                        <li><a href="404.html">instagram.com</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="yayabar-website">
+                    <a href="404.html" class="">
+                        <div>
+                            <span class="yay-icon yay-icon">
+                                SO
+                            </span>
+                            <span>aerobika.by</span>
+                            <span class="rui-yaybar-circle"></span>
+                        </div>
+                        <div class="yay-icon-collapse">
+                            <span data-feather="settings" class="rui-icon rui-icon-stroke-1_5"></span>
+                            <span class="rui-nav-circle"></span>
+                        </div>
+                    </a>
+                </li> -->
+                <li class="yay-item-active">
+                    <a href="dashboard.html">
+                        <span class="yay-icon">
+                            <span data-feather="home" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Сводка</span>
+                        <span class="rui-yaybar-circle"></span>
                     </a>
                 </li>
+                <li class="yay-item">
+                    <a href="widget.html">
+                        <span class="yay-icon">
+                            <span data-feather="box" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Виджет</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="element-alerts.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="plus-circle" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Автозвонки</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="404.html">Агресивный звонок</a></li>
+                        <li><a href="404.html">Звонок при выходе</a></li>
+                        <li><a href="404.html">Акция -50%</a></li>
+                        <li><a href="404.html">Нативный формат</a></li>
+                        <li><a href="404.html">Консультация</a></li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="element-alerts.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="user" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Команда сайта</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="404.html">Сотрудник №1</a></li>
+                        <li><a href="404.html">Сотрудник №2</a></li>
+                        <li><a href="404.html">Сотрудник №3</a></li>
+                        <li><a href="404.html">Сотрудник №4</a></li>
+                        <li><a href="404.html">Сотрудник №5</a></li>
+                    </ul>
+                </li>
+
+                <li class="yay-item">
+                    <a href="404.html">
+                        <span class="yay-icon">
+                            <span data-feather="calendar" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Записи разговоров</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+
+                <li class="yay-item">
+                    <a href="404.html">
+                        <span class="yay-icon">
+                            <span data-feather="grid" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Статистика</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+
+                <!-- <li class="yay-label">Apps</li>
+                <li>
+                    <a href="mailbox.html">
+                        <span class="yay-icon">
+                            <span data-feather="send" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Mailbox</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="messenger.html">
+                        <span class="yay-icon">
+                            <span data-feather="message-circle" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Messenger</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendar.html">
+                        <span class="yay-icon">
+                            <span data-feather="calendar" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Calendar</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-management.html">
+                        <span class="yay-icon">
+                            <span data-feather="book" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Project Management</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="file-manager.html">
+                        <span class="yay-icon">
+                            <span data-feather="file" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>File Manager</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <span class="yay-icon">
+                            <span data-feather="user" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Profile</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li class="yay-label">Content</li>
+                <li>
+                    <a href="grid.html">
+                        <span class="yay-icon">
+                            <span data-feather="grid" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Grid</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="colors.html">
+                        <span class="yay-icon">
+                            <span data-feather="droplet" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Colors</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="typography.html">
+                        <span class="yay-icon">
+                            <span data-feather="bold" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Typography</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="element-tables.html">
+                        <span class="yay-icon">
+                            <span data-feather="menu" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Tables</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li class="yay-label">Components</li>
+                <li class="">
+                    <a href="element-alerts.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="layers" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Base</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span
+                                data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                            ></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="element-alerts.html">Alerts</a></li>
+                        <li><a href="element-badge.html">Badge</a></li>
+                        <li><a href="element-breadcrumb.html">Breadcrumbs</a></li>
+                        <li><a href="element-buttons.html">Buttons</a></li>
+                        <li><a href="element-card.html">Card</a></li>
+                        <li><a href="element-carousel.html">Carousel</a></li>
+                        <li><a href="element-collapse.html">Collapse</a></li>
+                        <li><a href="element-dropdowns.html">Dropdowns</a></li>
+                        <li><a href="element-list-group.html">List group</a></li>
+                        <li><a href="element-media-object.html">Media object</a></li>
+                        <li><a href="element-modal.html">Modal</a></li>
+                        <li><a href="element-navs.html">Navs</a></li>
+                        <li><a href="element-pagination.html">Pagination</a></li>
+                        <li><a href="element-popovers.html">Popovers</a></li>
+                        <li><a href="element-progress.html">Progress</a></li>
+                        <li><a href="element-spinners.html">Spinners</a></li>
+                        <li><a href="element-tabs.html">Tabs</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="icons-feather.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="box" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Advanced</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span
+                                data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                            ></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li class="">
+                            <a href="icons-feather.html" class="yay-sub-toggle">
+                                Icons
+                                <span class="yay-icon-collapse">
+                                    <span
+                                        data-feather="chevron-right"
+                                        class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                                    ></span>
+                                </span>
+                            </a>
+                            <ul class="yay-submenu dropdown-triangle">
+                                <li><a href="icons-feather.html">Feather</a></li>
+                                <li><a href="icons-fontawesome.html">Font Awesome</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="chart-js.html" class="yay-sub-toggle">
+                                Charts
+                                <span class="yay-icon-collapse">
+                                    <span
+                                        data-feather="chevron-right"
+                                        class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                                    ></span>
+                                </span>
+                            </a>
+                            <ul class="yay-submenu dropdown-triangle">
+                                <li><a href="chart-js.html">Chart.js</a></li>
+                                <li><a href="chart-chartist.html">Chartist</a></li>
+                                <li><a href="chart-peity.html">Peity</a></li>
+                                <li><a href="chart-echarts.html">eCharts</a></li>
+                                <li><a href="chart-flot.html">Flot</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="element-timeline.html">Timeline</a></li>
+                        <li><a href="element-tree-view.html">Tree View</a></li>
+                        <li><a href="element-toasts.html">Toasts</a></li>
+                        <li><a href="element-sweetalert.html">Sweet Alert</a></li>
+                        <li><a href="element-maps.html">Maps</a></li>
+                        <li><a href="element-datatables.html">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="yay-label">Forms</li>
+                <li>
+                    <a href="element-forms.html">
+                        <span class="yay-icon">
+                            <span data-feather="mail" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Base</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="element-datetime.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="database" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Advanced</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span
+                                data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                            ></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="element-datetime.html">DateTime Picker</a></li>
+                        <li><a href="element-daterange.html">DateRange Picker</a></li>
+                        <li><a href="element-validation.html">Validation</a></li>
+                        <li><a href="element-touchspin.html">Touchspin</a></li>
+                        <li><a href="element-rangeslider.html">Range Slider</a></li>
+                        <li><a href="element-inputmasks.html">Input Masks</a></li>
+                        <li><a href="element-dropzone.html">Dropzone</a></li>
+                        <li><a href="element-colorpicker.html">Color Picker</a></li>
+                        <li><a href="element-selectize.html">Selectize</a></li>
+                        <li><a href="element-markdown.html">Markdown editor</a></li>
+                        <li><a href="element-WYSIWYG.html">WYSIWYG editor</a></li>
+                    </ul>
+                </li>
+                <li class="yay-label">Pages</li>
+                <li class="">
+                    <a href="sign-in.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="log-in" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Sign In</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span
+                                data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                            ></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="sign-in.html">Sign In</a></li>
+                        <li><a href="sign-in-2.html">Sign In 2</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="sign-up.html" class="yay-sub-toggle">
+                        <span class="yay-icon">
+                            <span data-feather="log-out" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>Sign Up</span>
+                        <span class="rui-yaybar-circle"></span>
+                        <span class="yay-icon-collapse">
+                            <span
+                                data-feather="chevron-right"
+                                class="rui-icon rui-icon-collapse rui-icon-stroke-1_5"
+                            ></span>
+                        </span>
+                    </a>
+                    <ul class="yay-submenu dropdown-triangle">
+                        <li><a href="sign-up.html">Sign Up</a></li>
+                        <li><a href="sign-up-2.html">Sign Up 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="404.html">
+                        <span class="yay-icon">
+                            <span data-feather="alert-octagon" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span>404</span>
+                        <span class="rui-yaybar-circle"></span>
+                    </a>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -63,13 +441,8 @@
             <div class="col-auto">
                 <div class="dropdown dropdown-hover dropdown-triangle dropdown-keep-open dropup">
                     <span class="badge badge-circle badge-brand border-0 shadow-none">3</span>
-                    <a class="btn btn-custom-round dropdown-item dropdown-is-link"
-                        href="messenger.html"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-offset="-30"
-                    >
+                    <a class="btn btn-custom-round dropdown-item dropdown-is-link" href="messenger.html"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-30">
                         <span data-feather="message-circle" class="rui-icon rui-icon-stroke-1_5"></span>
                     </a>
                     <div class="nav dropdown-menu">
@@ -80,13 +453,8 @@
 
             <div class="col-auto d-flex">
                 <div class="dropdown dropdown-hover dropdown-triangle dropdown-keep-open dropup">
-                    <a class="btn btn-custom-round dropdown-item dropdown-is-link"
-                        href="404.html"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-offset="-30"
-                    >
+                    <a class="btn btn-custom-round dropdown-item dropdown-is-link" href="404.html"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-30">
                         <span data-feather="dollar-sign" class="rui-icon"></span>
                     </a>
                     <div class="nav dropdown-menu">
@@ -97,31 +465,21 @@
 
             <div class="col-auto">
                 <div class="dropdown dropdown-hover dropdown-triangle dropdown-keep-open dropup">
-                    <a class="btn btn-custom-round dropdown-item dropdown-is-link"
-                        href="404.html"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-offset="-30"
-                    >
+                    <a class="btn btn-custom-round dropdown-item dropdown-is-link" href="404.html"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-30">
                         <span data-feather="help-circle" class="rui-icon"></span>
                     </a>
-                   <div class="nav dropdown-menu">
-                       <span>База знаний</span>
-                   </div>
+                    <div class="nav dropdown-menu">
+                        <span>База знаний</span>
+                    </div>
                 </div>
             </div>
 
 
             <div class="col-auto d-flex">
                 <div class="dropdown dropdown-hover dropdown-triangle dropdown-keep-open dropup">
-                    <a class="btn btn-custom-round dropdown-item dropdown-is-link"
-                        href="404.html"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-offset="-30"
-                    >
+                    <a class="btn btn-custom-round dropdown-item dropdown-is-link" href="404.html"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-30">
                         <span data-feather="settings" class="rui-icon"></span>
                     </a>
                     <div class="nav dropdown-menu">
@@ -133,7 +491,8 @@
     </div>
 </div>
 <div class="rui-yaybar-bg"></div>
-<!-- End: Sidenav --><!-- Desctop nav -->
+<!-- End: Sidenav -->
+    <!-- Desctop nav -->
 <nav class="rui-navbar rui-navbar-top rui-navbar-sticky">
     <div class="rui-navbar-brand">
         <a href="dashboard.html" class="rui-navbar-logo">
@@ -1147,37 +1506,470 @@
 <div class="rui-navbar-bg"></div>
 <!-- End: Mobile nav -->
 <div class="rui-page content-wrap">
-
-
-    
-
-
-    <div class="rui-page-error container">
-        <div class="row text-center">
-            <div class="col-12">
-                <img src="assets/images/jdun.jpg" alt="" class="d-block w-100 m-auto image-404">
-            </div>
-            <div class="col-12">
-                <div class="h1" class="mb-30">
-                    Сайт не выбран
+    <div class="rui-page-title">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center mx-0">
+                <div class="page-title hidden-sm">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="dashboard.html">aerobika.by</a></li>
+                        </ol>
+                    </nav>
+                    <h1 class="mt-0">Операторы</h1>
                 </div>
-            </div>
-            <p class="h4 mb-30 text-grey-5">Добавьте хотя бы один сайт что бы начать работу</p>
-            <div>
-                <a href="dashboard.html" class="btn btn-brand btn-long mb-30">
-                    <span class="icon">
-                        <span data-feather="plus" class="rui-icon rui-icon-stroke-1_5"></span>
-                    </span>
-                    <span class="text">Добавить сайт</span>
-                </a>
+                <div>
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item mr-15">
+                            <a class="active" id="myWebsites-tab" data-toggle="pill" href="#myWebsites" role="tab"
+                                aria-controls="myWebsites" aria-selected="true">Мои операторы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" id="statistics-tab" data-toggle="pill" href="#statistics" role="tab"
+                                aria-controls="statistics" aria-selected="false">Статистика</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <div class="rui-page-content">
+        <div class="page-title hidden-sm-up">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="dashboard.html">aerobika.by</a></li>
+                </ol>
+            </nav>
+            <h1>Операторы</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-between  flex-column flex-md-row mx-0">
+
+                <div class="d-flex align-items-start flex-column flex-sm-row align-items-sm-center">
+                    <a href="404.html" class="btn btn-brand btn-long mr-10">
+                        <span class="icon">
+                            <span data-feather="plus" class="rui-icon rui-icon-stroke-1_5"></span>
+                        </span>
+                        <span class="text">Добавить оператора</span>
+                    </a>
+
+                    <span class="ml-0 ml-sm-2 mt-10 mt-sm-0">Доступно рабочих мест: 4</span>
+                </div>
 
 
+                <div
+                    class="btn-group dropdown dropdown-hover dropdown-triangle dropdown-keep-open mr-20 mt-20 mt-md-0 visible-md">
+                    <a class="dropdown-item" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Все</span>
+                        <span data-feather="chevron-down" class="rui-icon rui-icon-stroke-1_5"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right nav ">
+                        <li><a class="nav-link" href="#">Все</a></li>
+                        <li><a class="nav-link" href="#">Активные</a></li>
+                        <li><a class="nav-link" href="#">Удаленные</a></li>
+                    </ul>
+                </div>
 
+                <div class="btn-group dropdown dropdown-triangle mr-20 mt-20 mt-md-0 hidden-md">
+                    <a class="dropdown-item" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Все</span>
+                        <span data-feather="chevron-down" class="rui-icon rui-icon-stroke-1_5"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left nav">
+                        <li><a class="nav-link" href="#">Все</a></li>
+                        <li><a class="nav-link" href="#">Активные</a></li>
+                        <li><a class="nav-link" href="#">Удаленные</a></li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="rui-gap-3"></div>
 
+            <!-- Tabs content -->
+            <div class="row mx-0" id="tablesContent">
+                <div class="tab-content w-100">
+                    <!-- Table #1 -->
+                    <div class="tab-pane fade show active" id="myWebsites" role="tabpanel"
+                        aria-labelledby="myWebsites-tab">
+                        <div class="table-wrap">
+                            <table class="table table-hover">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col" class="text-center" style="width: 50px;"></th>
+                                        <th scope="col">Оператор</th>
+                                        <th scope="col" class="text-center">Рейтинг</th>
+                                        <th scope="col" class="text-center">Сайты</th>
+                                        <th scope="col" class="text-center">Разговоров</th>
+                                        <th scope="col" class="text-right">Лицензия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="px-0">
+                                            <div class="table-hidden-action">
+                                                <a href="404.html" class="btn btn-grey btn-uniform btn-round"><span
+                                                        class="icon"><span data-feather="settings"
+                                                            class="rui-icon rui-icon-stroke-1_5"></span></span></a>
+                                            </div>
+                                        </th>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap no-wrap">
+                                                    <span class="media-img">
+                                                        <div class="badge badge-circle badge-brand">
+                                                            <span data-feather="check"
+                                                                class="rui-icon rui-icon-stroke-2"></span>
+                                                        </div>
+                                                        <img src="assets/images/avatar-1.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Непавел Бородынов</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="text-center">
+                                                <div>-</div>
+                                                <small class="text-grey-6">Нет рейтинга</small>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>2</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>5 890</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <div class="mr-10">
+                                                    <a href="404.html">
+                                                        <small class="text-hover-primary">Продлить</small>
+                                                    </a>
+                                                </div>
+
+                                                <div class="rui-widget rui-widget-chart widget-in-table">
+                                                    <div class="rui-widget-chart-info">
+                                                        <div class="rui-widget-title h2 color-primary mnb-5 lh-5">
+                                                            <strong class="h5">40</strong>
+                                                        </div>
+                                                        <small class="rui-widget-subtitle">Дней</small>
+                                                    </div>
+                                                    <div class="rui-chartjs-container">
+                                                        <div class="rui-chartist rui-chartist-donut" data-width="70"
+                                                            data-height="70" data-chartist-series="20,8"
+                                                            data-chartist-width="4"
+                                                            data-chartist-gradient="#007bff;#007bff"
+                                                            style="color: #2fc787">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="px-0">
+                                            <div class="table-hidden-action">
+                                                <a href="404.html" class="btn btn-grey btn-uniform btn-round"><span
+                                                        class="icon"><span data-feather="settings"
+                                                            class="rui-icon rui-icon-stroke-1_5"></span></span></a>
+                                            </div>
+                                        </th>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap">
+                                                    <span class="media-img">
+                                                        <img src="assets/images/avatar-2.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Оператор №2</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="text-center">
+                                                <div>124</div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>34</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>9 980</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <div class="mr-10">
+                                                    <a href="404.html">
+                                                        <small class="text-hover-primary">Продлить</small>
+                                                    </a>
+                                                </div>
+
+                                                <div class="rui-widget rui-widget-chart widget-in-table">
+                                                    <div class="rui-widget-chart-info">
+                                                        <div class="rui-widget-title h2 color-primary mnb-5 lh-5">
+                                                            <strong class="h5">19</strong>
+                                                        </div>
+                                                        <small class="rui-widget-subtitle">Дней</small>
+                                                    </div>
+                                                    <div class="rui-chartjs-container">
+                                                        <div class="rui-chartist rui-chartist-donut" data-width="70"
+                                                            data-height="70" data-chartist-series="5,8"
+                                                            data-chartist-width="4"
+                                                            data-chartist-gradient="#fd7e14;#fd7e14"
+                                                            style="color: #fdbf21">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="px-0">
+                                            <div class="table-hidden-action">
+                                                <a href="404.html" class="btn btn-grey btn-uniform btn-round"><span
+                                                        class="icon"><span data-feather="settings"
+                                                            class="rui-icon rui-icon-stroke-1_5"></span></span></a>
+                                            </div>
+                                        </th>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap">
+                                                    <span class="media-img">
+                                                        <img src="assets/images/avatar-3.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Оператор №3</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="text-center">
+                                                <div>45</div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>76</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div>91 678</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end align-items-center w-100">
+                                                <div class="mr-10">
+                                                    <a href="404.html">
+                                                        <small class="text-hover-primary">Продлить</small>
+                                                    </a>
+                                                </div>
+
+                                                <div class="rui-widget rui-widget-chart widget-in-table">
+                                                    <div class="rui-widget-chart-info">
+                                                        <div class="rui-widget-title h2 color-primary mnb-5 lh-5">
+                                                            <strong class="h5">9</strong>
+                                                        </div>
+                                                        <small class="rui-widget-subtitle">Дней</small>
+                                                    </div>
+                                                    <div class="rui-chartjs-container">
+                                                        <div class="rui-chartist rui-chartist-donut" data-width="70"
+                                                            data-height="70" data-chartist-series="1,8"
+                                                            data-chartist-width="4"
+                                                            data-chartist-gradient="#28a745;#28a745"
+                                                            style="color: #ef5164">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End: Table #1 -->
+
+                    <!-- Table #2 -->
+                    <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+                        <div class="table-responsive-md">
+                            <table class="table table-hover display" id="example" style="width:100%">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col" data-orderable="false">
+                                            Оператор
+                                        </th>
+                                        <th scope="col">
+                                            Статус
+                                        </th>
+                                        <th scope="col">
+                                            Рейтинг
+                                        </th>
+                                        <th scope="col">
+                                            Сайты
+                                        </th>
+                                        <th scope="col">
+                                            Разговоров
+                                        </th>
+                                        <th scope="col">
+                                            Пропущенно
+                                        </th>
+                                        <th scope="col">
+                                            Время ответа
+                                        </th>
+                                        <th scope="col">
+                                            Время онлайна
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap">
+                                                    <span class="media-img">
+                                                        <div class="badge badge-circle badge-brand">
+                                                            <span data-feather="check"
+                                                                class="rui-icon rui-icon-stroke-2"></span>
+                                                        </div>
+                                                        <img src="assets/images/avatar-1.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Непавел Бородынов</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <small>
+                                                Активен
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <div class="mb-0">
+                                                <span data-feather="arrow-down"
+                                                    class="rui-icon rui-icon-stroke-2 text-danger"></span>
+                                                <span>
+                                                    <span class="text-danger">233</span>
+                                                    <span class="text-grey-6">(12)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>24</td>
+                                        <td>12c</td>
+                                        <td>24ч 12м</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap">
+                                                    <span class="media-img">
+                                                        <img src="assets/images/avatar-2.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Оператор №2</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <small>
+                                                Не Активен
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <div class="mb-0">
+                                                <span data-feather="arrow-down"
+                                                    class="rui-icon rui-icon-stroke-2 text-danger"></span>
+                                                <span>
+                                                    <span class="text-danger">24</span>
+                                                    <span class="text-grey-6">(56)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>10</td>
+                                        <td>9</td>
+                                        <td>87</td>
+                                        <td>99c</td>
+                                        <td>50ч 22м</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <div>
+                                                <div class="media media--lg flex-nowrap">
+                                                    <span class="media-img">
+                                                        <img src="assets/images/avatar-3.png" alt="">
+                                                    </span>
+                                                    <span class="media-body">
+                                                        <span class="media-title">Оператор №3</span>
+                                                        <small class="media-subtitle">
+                                                            <a href="404.html"
+                                                                class="text-hover-primary">example@gmail.com</a>
+                                                        </small>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <small>
+                                                Активен
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <div class="mb-0">
+                                                <span data-feather="arrow-down"
+                                                    class="rui-icon rui-icon-stroke-2 text-danger"></span>
+                                                <span>
+                                                    <span class="text-danger">56</span>
+                                                    <span class="text-grey-6">(98)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>67</td>
+                                        <td>23c</td>
+                                        <td>5ч 10м</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End: Table #2 -->
+                </div>
+            </div>
+
+            <!-- End: Tabs content -->
+        </div>
+    </div>
 </div>
 <div
     class="modal fade"
