@@ -1505,8 +1505,13 @@ textarea.form-control::placeholder{
     color: #93979E;
 }
 .content input{
-    max-width: 245px;
+    /* max-width: 245px; */
     height: 35px;
+}
+
+.content textarea{
+    /* max-width: 245px; */
+    resize: none;
 }
 
 .content button{
