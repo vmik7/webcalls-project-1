@@ -1,0 +1,97 @@
+
+// MIXINS 
+
+@import 'mixins';
+
+
+
+// FONTS
+
+// File with @font-face rules
+@import 'fonts';
+
+// Google fonts imports
+
+// Cyrillic support (add this suffix on URL)
+// &display=swap&subset=cyrillic-ext
+
+
+
+// VARIABLES
+
+// Default font
+$defaultFont: "Arial";
+
+// Color for custom outline
+$outline-color: #42a0da;
+
+// Maximum container width
+$max-container-width: 1170;
+
+// Media breakpoints
+$md1: $max-container-width + 12;
+$md2: 992;
+$md3: 768;
+$md4: 480;
+
+
+
+// NULL & GENERAL
+
+@import 'null';
+
+// _visually-hidden class for elements like default checkbox (it should not be visible, but it should be!)
+._visually-hidden {
+    @include visually-hidden();
+}
+
+// _focus-outline class for elements, needed custom outline
+._focus-outline:focus {
+    @include focus-outline();
+}
+
+// setting custom focus outline for some elements
+a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
+    @include focus-outline();
+}
+
+// _no-focus class for elements, which not needed focus
+._no-focus-outline:focus {
+    @include no-focus-outline();
+}
+
+// remove focus outline for elements, which are on focus, but not by TAB key
+.js-focus-visible :focus:not(.focus-visible) {
+    @include no-focus-outline();
+}
+
+
+
+// GRID & CONTAINER
+
+._container {
+    max-width: $max-container-width + px;
+    margin: 0 auto;
+    @media screen and (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media screen and (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media screen and (max-width: $md3+px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+
+
+// BLOCKS
+
+@import 'blocks/page';
+@import 'blocks/check';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/main';
+@import 'blocks/footer';
+

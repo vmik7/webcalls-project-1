@@ -1,0 +1,31 @@
+
+// Page
+
+.page {
+
+    // Body
+
+    &__body {
+        font-family: $defaultFont, sans-serif;
+        color: #000;
+
+        // Lock modificator when some menu is opened (to stop scroll)
+
+        &_lock {
+            overflow: hidden;
+        }
+
+        // for sticky footer
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    // Main
+
+    &__main {
+        
+        // for sticky footer
+        flex-grow: 1;
+    }
+}

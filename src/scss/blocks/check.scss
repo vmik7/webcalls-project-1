@@ -1,0 +1,62 @@
+
+// Check
+
+.check {
+    padding-left: 1.2em;
+
+    // Input
+
+    &__input {
+        appearance: none;
+    }
+
+    // Box
+
+    &__box {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        margin-left: -1.2em;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect x="3" y="3" width="14" height="14" fill="%23fff" stroke="%234a90e2" stroke-width="2" rx="2"/%3E%3C/svg%3E');
+        // width: 0.6em;
+        // height: 0.6em;
+        // margin-top: 0.2em;
+        // margin-left: -1em;
+        // border-radius: 0.05em;
+        // background-color: white;
+        // background-repeat: no-repeat;
+        // background-position: 50% 50%;
+        // box-shadow: 0 0 0 0.1em #4A90E2;
+    }
+
+    // cheked state
+    &__input:checked + &__box {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect x="2" y="2" width="16" height="16" fill="%234A90E2" rx="3"/%3E%3Cpolyline fill="none" stroke="%23fff" stroke-width="3" points="5 9 9 13 15 6"/%3E%3C/svg%3E');
+        // background-color: #4A90E2;
+        // background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"%3E%3Cpolyline fill="none" stroke="%23fff" stroke-width="3" points="1.079 4.999 5 9 10.837 2"/%3E%3C/svg%3E');
+    }
+
+    // focus state
+    &__input:focus + &__box {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect width="20" height="20" fill="%237ed321" rx="4"/%3E%3Crect width="14" height="14" x="3" y="3" fill="%23fff" stroke="%234a90e2" stroke-width="2" rx="2"/%3E%3C/svg%3E');
+        // box-shadow: 0 0 0 0.1em #4A90E2,
+        //             0 0 0 0.2em #7ED321;
+    }
+
+    // checked & focus state
+    &__input:checked:focus + &__box {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect width="20" height="20" fill="%237ed321" rx="4"/%3E%3Crect width="16" height="16" x="2" y="2" fill="%234a90e2" rx="3"/%3E%3Cpolyline fill="none" stroke="%23fff" stroke-width="3" points="5 9 9 13 15 6"/%3E%3C/svg%3E');
+    }
+
+    // disabled state
+    &__input:disabled + &__box {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect x="3" y="3" width="14" height="14" fill="%23fff" stroke="%239b9b9b" stroke-width="2" rx="2"/%3E%3C/svg%3E');
+        // box-shadow: 0 0 0 0.1em #9B9B9B;
+    }
+
+    // checked & disabled state
+    &__input:checked:disabled + &__box {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Crect x="2" y="2" width="16" height="16" fill="%239B9B9B" rx="3"/%3E%3Cpolyline fill="none" stroke="%23FFF" stroke-width="3" points="5 9 9 13 15 6"/%3E%3C/svg%3E');
+        // background-color: #9B9B9B;
+    }
+}
