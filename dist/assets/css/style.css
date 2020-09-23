@@ -317,14 +317,14 @@ margin-left: 0 !important;
 }
 
 #tarif-1 .btn-default{
-    background-color: #1DC9B7 !important;
+    /* background-color: #1DC9B7 !important; */
 }
 
 #tarif-3 .card-title{
-    color: #393939 !important;
+    /* color: #393939 !important; */
 }
 #tarif-3 .btn-default{
-    background-color: #393939 !important;
+    /* background-color: #393939 !important; */
 }
 
 /* sidebar */
@@ -1552,7 +1552,7 @@ textarea.form-control::placeholder{
 }
 
 .btn-default{
-    background-color: #d7ea53 !important;
+    background-color: #6821FF !important;
 }
 
 #measurements_content .custom-control-input:disabled~.custom-control-label::before,
@@ -1846,13 +1846,19 @@ input.error_input{
 }
 
 .card-payment{
-     width: 303.2px;
-        max-height: 561px;
-        background: #FFFFFF;
-        border: 1px solid #F3F3F3;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
+    width: 303.2px;
+    /* max-height: 561px; */
+    min-height: 582px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.card-payment .card-body {
+    display: flex;
+    flex-direction: column;
 }
 
 .card-payment .card-title{
@@ -1861,20 +1867,34 @@ input.error_input{
     font-weight: 900 !important;
     font-size: 22px;
     line-height: 27px;
-    color: #1DC9B7;
+    color: #6821FF;
 }
 
 .card-payment .ok_icon{
     margin-right: -4px;
 }
 
-.card-payment p{  
+.card-payment .card-text {  
     font-family: Roboto;
     font-style: normal;
     font-weight: 300 !important;
     font-size: 14px !important;
     line-height: 16px !important;
     color: #93979E !important;
+}
+
+.card-payment .card-sub-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #565656;
+}
+.card-payment .card-separator{
+    height: 3px;
+    background: #F8F8F8;
 }
 
 .card-payment .card-select{
@@ -2241,7 +2261,8 @@ input.error_input{
     }
     .card-payment{
         width: 337.2px;
-        max-height: 561px;
+        /* max-height: 561px; */
+        min-height: 582px;
         background: #FFFFFF;
         border: 1px solid #F3F3F3;
         box-sizing: border-box;
