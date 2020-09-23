@@ -4,8 +4,10 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   position: fixed;
   z-index: 5;
-  width: 100%;
+  /* width: 100%; */
   top: 0;
+
+  right: 0;
 }
 
 .rui-navbar-show .rui-page .rui-page-title {
@@ -81,6 +83,8 @@
     height: 72px;
     display: flex;
     align-items: center;
+
+    width: 100%;
   }
 
   .rui-page .page-title {

@@ -357,12 +357,20 @@ body {
     will-change: margin-left;
 }
 
+.yaybar.yay-shrink ~ .content-wrap .fixed-bar {
+    left: 260px;
+}
+
 .yay-hide .yaybar.yay-shrink ~ .content-wrap {
     margin-left: 0;
 }
 
 .yay-hide .yaybar.yay-shrink.yay-hide-to-small ~ .content-wrap {
     margin-left: 60px;
+}
+
+.yay-hide .yaybar.yay-shrink.yay-hide-to-small ~ .content-wrap .fixed-bar {
+    left: 60px;
 }
 
 /**

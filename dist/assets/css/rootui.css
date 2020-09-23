@@ -320,6 +320,17 @@ body.rui-no-transition * {
     }
 }
 
+@media (min-width: 1199.99px) {
+    .rui-page-content {
+      padding-top: calc(75px + 30px) !important;
+    }
+}
+@media (max-width: 1199.98px) {
+    .rui-page-content {
+      padding-top: calc(75px + 60px + 30px) !important;
+    }
+}
+
 .rui-page .rui-page-sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;

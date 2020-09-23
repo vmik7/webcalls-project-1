@@ -10,9 +10,6 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400%7cOpen+Sans:300,400,600%7cPT+Serif:400i"/>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/bootstrap-custom.css"/>
     <link rel="stylesheet" href="assets/vendor/overlayscrollbars/css/OverlayScrollbars.css"/>
     <link rel="stylesheet" href="assets/css/yaybar.css"/>
@@ -27,17 +24,23 @@
     <link rel="stylesheet" href="assets/css/custom-navbar-sidebar.css"/>
     <link class="rui-nightmode-link" rel="stylesheet" href="assets/css/rootui-night.css" media="(night)"/>
 
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:wght:100,200,300,400,500,600,700,800,900&display=swap">
     <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.10.1/umd/popper.min.js"> -->
-    <!-- <link rel="stylesheet" href=" assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.10.1/umd/popper.min.js">
+    <link rel="stylesheet" href=" assets/css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <!-- <link rel="stylesheet" href="assets/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
+    
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 
   </head>
   <body class="rui-no-transition rui-navbar-autohide rui-section-lines" data-spy="scroll" data-target=".rui-page-sidebar" data-offset="140">
@@ -1163,81 +1166,37 @@
 <div class="rui-navbar-bg"></div>
 <!-- End: Mobile nav -->
 <div class="rui-page content-wrap">
-    <div class="rui-page-title fixed-bar">
-        <div class="container-fluid">
-            <div class="row justify-content-between align-items-center mx-0">
-                <div class="page-title hidden-sm">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Партнерская программа</li>
-                        </ol>
-                    </nav>
-                    <h1 class="mt-0">Мои рефералы</h1>
+
+
+    
+
+
+    <div class="rui-page-error container">
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="assets/images/jdun.jpg" alt="" class="d-block w-100 m-auto image-404">
+            </div>
+            <div class="col-12">
+                <div class="h1" class="mb-30">
+                    Сайт не выбран
                 </div>
-                <div>
-                    <ul class="nav">
-                        <li class="nav-item mr-15">
-                            <a class="" href="/affiliate.html">Сводка</a>
-                        </li>
-                        <li class="nav-item mr-15">
-                            <a class="active" href="/my_referals.html">Мои рефералы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="" href="/payment_history.html">История платежей</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <p class="h4 mb-30 text-grey-5">Добавьте хотя бы один сайт что бы начать работу</p>
+            <div>
+                <a href="dashboard.html" class="btn btn-brand btn-long mb-30">
+                    <span class="icon">
+                        <span data-feather="plus" class="rui-icon rui-icon-stroke-1_5"></span>
+                    </span>
+                    <span class="text">Добавить сайт</span>
+                </a>
             </div>
         </div>
     </div>
-    <div class="rui-page-content">
-        <div class="page-title hidden-sm-up">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Партнерская программа</li>
-                </ol>
-            </nav>
-            <h1>Мои рефералы</h1>
-        </div>
-        <div class="container-fluid">
-
-            <div class="rui-gap-3"></div>
-
-                <div class="row d-flex justify-content-start align-items-left">
-                    <!-- form-title -->
-                    <div class="col-xl-8 mt-5">
-                        <h1 class="secondary-heading mb-3">Список ваших партнеров </h1>
-                        <p class="description mb-0">Здесь вы можете увидеть реферальное “дерево” ваших партнеров </p>
-                    </div>
-                    <!-- end form-title -->
-                </div>
-                <div class="row d-flex justify-content-start align-items-left mt-5">
-                  <!-- form-title -->
-                  <div class="col-xl-9 mb-5">
-              
-                    <div class="list-group">
-                      <a href="#!" class="list-group-item list-group-item-action"  onclick='showListGroup("1")'><i class="fas fa-plus"></i> davumoka@gmail.com (1 уровень) - Активен</a>
-                        <div class="list-group fade d-none" id="list-group-referal-1">
-                          <a href="#!" class="list-group-referal list-group-item list-group-item-action ">- davumoka@gmail.com (2 уровень) - Активен</a>
-                          <a href="#!" class="list-group-referal list-group-item list-group-item-action">- davumoka@gmail.com (2 уровень) - Не активен</a>
-                        </div>
-                      <a href="#!" class="list-group-item list-group-item-action">davumoka@gmail.com (1 уровень) - Не активен</a>
-                      <a href="#!" class="list-group-item list-group-item-action" onclick='showListGroup(2)'><i class="fas fa-plus"></i> davumoka@gmail.com (1 уровень) - Активен</a>
-                      <!-- open :  (classes) show + d-block  hiden: fade + d-none -->
-                        <div class="list-group fade d-none" id="list-group-referal-2">
-                          <a href="#!" class="list-group-referal list-group-item list-group-item-action">- davumoka@gmail.com (2 уровень) - Активен</a>
-                          <a href="#!" class="list-group-referal list-group-item list-group-item-action">- davumoka@gmail.com (2 уровень) - Не активен</a>
-                        </div>
-                      <a href="#!" class="list-group-item list-group-item-action">davumoka@gmail.com (1 уровень) - Не активен</a>
-                      <a href="#!" class="list-group-item list-group-item-action ">davumoka@gmail.com (1 уровень) - Активен</a>
-                    </div>
-              
-                  </div>
-                </div>
 
 
-        </div>
-    </div>
+
+
+
 </div>
 <div
     class="modal fade"
