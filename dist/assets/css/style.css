@@ -1714,7 +1714,7 @@ input.error_input{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold !important;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 17px;
     text-align: right;
     color: #ED1C24;
@@ -1846,7 +1846,8 @@ input.error_input{
 }
 
 .card-payment{
-    width: 303.2px;
+    /* width: 303.2px; */
+    max-width: 303.2px;
     /* max-height: 561px; */
     min-height: 582px;
     background: #FFFFFF;
@@ -1865,7 +1866,7 @@ input.error_input{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900 !important;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 27px;
     color: #6821FF;
 }
@@ -1980,7 +1981,7 @@ input.error_input{
     color: rgba(147, 151, 158, 0.8);
 }
 #select_dropdown_pay .dropdown-menu{
-    width: 169.52px;
+    width: 160px;
     background: #FFFFFF;
     border: 1px solid #E7EEF3;
     box-sizing: border-box;
@@ -2033,8 +2034,8 @@ input.error_input{
     line-height: 1.2em;
 
 
-    padding-top: 28px;
-    padding-right: 20px;
+    padding-top: 25px;
+    padding-right: 15px;
 }
 
 
@@ -2230,7 +2231,7 @@ input.error_input{
         font-family: Montserrat;
         font-style: normal;
         font-weight: 900 !important;
-        font-size: 25px;
+        font-size: 20px;
         margin-left: -20px;
         line-height: 30px;
         text-align: right;
@@ -2241,7 +2242,7 @@ input.error_input{
     }
     #select_dropdown_pay button{
         position: relative;
-        width: 169.52px;
+        width: 160px;
         height: 36.81px;
         background: #FFFFFF;
         border: 1px solid #E7EEF3;
@@ -2260,7 +2261,8 @@ input.error_input{
         color: rgba(147, 151, 158, 0.8);
     }
     .card-payment{
-        width: 337.2px;
+        /* width: 337.2px; */
+        max-width: 337.2px;
         /* max-height: 561px; */
         min-height: 582px;
         background: #FFFFFF;
