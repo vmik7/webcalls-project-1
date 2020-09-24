@@ -312,6 +312,8 @@ body.rui-no-transition * {
     z-index: 1;
 
     overflow-x: hidden;
+
+    min-height: calc(100vh - 70px);
 }
 
 @media (max-width: 575.98px) {
