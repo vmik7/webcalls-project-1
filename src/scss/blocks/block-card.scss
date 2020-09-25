@@ -1,0 +1,136 @@
+@import '../mixins';
+@import '../variables';
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 290px);
+    column-gap: 40px;
+    row-gap: 40px;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.block-card {
+    max-width: 290px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 750px) {
+        margin: 0 auto;
+    }
+
+    &:hover, &:focus {
+        transform: scale(1.08);
+    }
+
+    &__img {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        padding: 25px 26px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: Montserrat, sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: #393939;
+    }
+
+    &__sub-title {
+        margin: 10px 0 15px 0;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #a0a0a0;
+    }
+
+    &__show-more {
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+
+    &__item-icon {
+    }
+
+    &__item-text {
+        margin: 0 0 0 17px;
+        font-family: Roboto, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        color: #7E7E7E;
+    }
+
+    &__item-value {
+        margin-left: auto;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #393939;
+    }
+
+    &__bottom {
+        min-height: 62px;
+        padding: 16px 26px;
+        background: #f5f3f3;
+        display: flex;
+        align-items: center;
+
+        margin-top: auto;
+
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        overflow: hidden;
+    }
+
+    &__button {
+        width: 128px;
+        height: 30px;
+        background: #6A25FF;
+        border-radius: 5px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: #fff;
+        transition: all 0.3s ease;
+
+        &:hover, &:focus {
+            color: #212529;
+            background: #fff;
+        }
+    }
+}
