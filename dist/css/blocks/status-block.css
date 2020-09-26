@@ -1,7 +1,7 @@
 .status-block {
   position: relative;
   width: 421px;
-  height: 76px;
+  min-height: 76px;
   padding: 10px 30px;
   background: var(--bg-color, #ECECEC);
   border-top-right-radius: 5px;
@@ -15,6 +15,7 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  row-gap: 3px;
   border-left: 5px solid var(--header-color, #8F8F8F);
 }
 

@@ -1,0 +1,30 @@
+@import '../mixins';
+@import '../variables';
+
+.ident-note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 40px;
+
+    &__icon {
+
+    }
+
+    &__status {
+        flex: 1 1 100%;
+
+    }
+
+    &__text {
+        flex: 0 0 33%;
+        margin: 0;
+
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #757575;
+    }
+}

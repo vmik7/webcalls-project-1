@@ -1,0 +1,17 @@
+@import '../mixins';
+@import '../variables';
+
+.wait-block {
+    text-align: center;
+
+    &__img {
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #A0A0A0;
+    }
+}

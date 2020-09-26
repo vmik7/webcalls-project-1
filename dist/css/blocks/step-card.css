@@ -35,6 +35,14 @@ body {
   margin-bottom: 10px;
 }
 
+.step-card__sub-header {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #A0A0A0;
+  margin: 5px 0 0 0;
+}
+
 .step-card__paragraph {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -108,6 +116,46 @@ body {
   margin-bottom: 30px;
 }
 
+.step-card__form {
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.step-card__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: column;
+  -webkit-column-gap: 137px;
+     -moz-column-gap: 137px;
+          column-gap: 137px;
+  row-gap: 18px;
+}
+
+.step-card__form-field {
+  position: relative;
+}
+
+.step-card__form-field_wide {
+  grid-column: span 2;
+}
+
+.step-card__form-label {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  width: 100px;
+  text-align: right;
+  padding-right: 24px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #393939;
+}
+
 .step-card__input {
   background: #FCFCFC;
   border: 1px solid #E7EBF4;
@@ -117,6 +165,26 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #8F8F8F;
+  height: 35px;
+  width: 100%;
+}
+
+.step-card__button {
+  display: block;
+  border: 0;
+  background: #6A25FF;
+  border-radius: 5px;
+  height: 52px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.step-card__form-submit {
+  margin-top: 40px;
 }
 
 .step-card__textarea {
@@ -124,4 +192,67 @@ body {
   min-height: 144px;
   resize: none;
   padding: 17px 29px;
+}
+
+.step-card__controls-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  margin-bottom: 35px;
+}
+
+.step-card__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-card__control-img {
+  margin-right: 10px;
+}
+
+.step-card__control-text {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #393939;
+}
+
+.step-card__control-text_bold {
+  font-weight: 900;
+}
+
+.step-card__doc-list {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.step-card__doc-list-item {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.step-card__doc-list-header {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #393939;
+  margin-bottom: 10px;
+}
+
+.step-card__doc-list-text {
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #A0A0A0;
+  margin: 0;
 }

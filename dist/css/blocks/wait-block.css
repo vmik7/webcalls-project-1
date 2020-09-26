@@ -1,0 +1,14 @@
+.wait-block {
+  text-align: center;
+}
+
+.wait-block__img {
+  margin-bottom: 23px;
+}
+
+.wait-block__text {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A0A0A0;
+}

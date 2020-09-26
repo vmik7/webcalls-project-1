@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Курсы</title>
+    <title>Идентификация</title>
     <meta name="description"
         content="RootUI - clean and powerful solution for your Dashboards, Administration areas." />
     <meta name="keywords" content="admin, dashboard, template, react, reactjs, html, jquery, clean" />
@@ -44,9 +44,13 @@
     <!-- Your custom styles (optional) -->
 
     <link rel="stylesheet" href="css/blocks/radius-block.css">
-    <link rel="stylesheet" href="css/blocks/block-card.css">
-    <link rel="stylesheet" href="css/blocks/course-card.css">
-    
+    <link rel="stylesheet" href="css/blocks/ident-note.css">
+    <link rel="stylesheet" href="css/blocks/content-max-width.css">
+    <link rel="stylesheet" href="css/blocks/step-card.css">
+    <link rel="stylesheet" href="css/blocks/status-block.css">
+    <link rel="stylesheet" href="css/blocks/wait-block.css">
+    <link rel="stylesheet" href="css/blocks/ident-button.css">
+
 </head>
 
 <body class="rui-no-transition rui-navbar-autohide rui-section-lines" data-spy="scroll" data-target=".rui-page-sidebar"
@@ -1210,195 +1214,234 @@
 
                 <div class="rui-gap-3"></div>
 
-                <div class="cards-wrapper">
-                    <div class="radius-block block-card course-card" tabindex="0">
-                        <div class="radius-block__inherit-top block-card__img">
-                            <picture>
-                                <source srcset="img/course-img.webp 1x,
-                                                img/course-img@2x.webp 2x"
-                                        type="image/webp">
-                                <img	src="img/course-img.jpg"
-                                        srcset="img/course-img@2x.jpg 2x"
-                                        alt="course image">
-                            </picture>
+                <div class="content-max-width">
+                    <div class="ident-note">
+                        <div class="ident-note__icon">
+                            <img src="img/identification-error.svg" alt="Шпион">
                         </div>
-                        <div class="block-card__content">
-                            <h3 class="block-card__title">
-                                Курс номер один по этому
-                            </h3>
-                            <p class="block-card__sub-title">
-                                Описание курса по. А  сюда и обратно и наоборот и еще вот. <a href="#" class="block-card__show-more">Подробнее</a>
+                        <div class="ident-note__status status-block status-block_red">
+                            <p class="status-block__title">
+                                Личность не идентифицирована!
                             </p>
-                            <ul class="block-card__list">
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-video.svg" alt="video">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Видеоуроки
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-clock.svg" alt="clock">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Время программы
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        38ч 20м
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-task.svg" alt="task">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Кол-во заданий
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="block-card__bottom">
-                            <button class="block-card__button">Купить</button>
-                            <div class="course-card__price">
-                                от 49$
-                            </div>
-                        </div>
-                    </div>
-                    <div class="radius-block block-card course-card" tabindex="0">
-                        <div class="radius-block__inherit-top block-card__img">
-                            <picture>
-                                <source srcset="img/course-img.webp 1x,
-                                                img/course-img@2x.webp 2x"
-                                        type="image/webp">
-                                <img	src="img/course-img.jpg"
-                                        srcset="img/course-img@2x.jpg 2x"
-                                        alt="course image">
-                            </picture>
-                        </div>
-                        <div class="block-card__content">
-                            <h3 class="block-card__title">
-                                Курс номер один по этому
-                            </h3>
-                            <p class="block-card__sub-title">
-                                Описание курса по. А  сюда и обратно и наоборот и еще вот. <a href="#" class="block-card__show-more">Подробнее</a>
+                            <p class="status-block__text">
+                                Доступ к обучению закрыт. Пройдите процедуру идентифицаии ниже
                             </p>
-                            <ul class="block-card__list">
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-video.svg" alt="video">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Видеоуроки
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-clock.svg" alt="clock">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Время программы
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        38ч 20м
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-task.svg" alt="task">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Кол-во заданий
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                            </ul>
                         </div>
-                        <div class="radius-block__inherit-bottom block-card__bottom">
-                            <button class="block-card__button">Купить</button>
-                            <div class="course-card__price">
-                                от 49$
-                            </div>
-                        </div>
+                        <p class="ident-note__text">
+                            Согласно п 1 1 договора оферты пользователь обязан пройти процедуру идентификации прежду чемполучит доступ к курсу. Подробную информация и о томкак пройти идентификацию <a href="#">читайте здесь</a> 
+                        </p>
                     </div>
-                    <div class="radius-block block-card course-card course-card_activated" tabindex="0">
-                        <div class="radius-block__inherit-top block-card__img">
-                            <picture>
-                                <source srcset="img/course-img.webp 1x,
-                                                img/course-img@2x.webp 2x"
-                                        type="image/webp">
-                                <img	src="img/course-img.jpg"
-                                        srcset="img/course-img@2x.jpg 2x"
-                                        alt="course image">
-                            </picture>
-                        </div>
-                        <div class="block-card__content">
-                            <h3 class="block-card__title">
-                                Курс номер один по этому
-                            </h3>
-                            <p class="block-card__sub-title">
-                                Описание курса по. А  сюда и обратно и наоборот и еще вот. <a href="#" class="block-card__show-more">Подробнее</a>
-                            </p>
-                            <ul class="block-card__list">
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-video.svg" alt="video">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Видеоуроки
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-clock.svg" alt="clock">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Время программы
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        38ч 20м
-                                    </div>                            
-                                </li>
-                                <li class="block-card__list-item">
-                                    <div class="block-card__item-icon">
-                                        <img src="img/card-icon-task.svg" alt="task">
-                                    </div>
-                                    <p class="block-card__item-text">
-                                        Кол-во заданий
-                                    </p>
-                                    <div class="block-card__item-value">
-                                        20
-                                    </div>                            
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="radius-block__inherit-bottom block-card__bottom">
-                            <div class="course-card__bottom-left">
-                                Доступ до: <span>12.22.20</span>
-                            </div>
-                            <div class="course-card__bottom-right">
-                                Осталось: <span>30 дней</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                
+                    <div class="rui-gap-3"></div>
+    
+                    <div class="radius-block step-card">
+                        <h3 class="step-card__header">
+                            Шаг 1: Укажите личные данные
+                        </h3>
+                        <p class="step-card__sub-header">
+                            Описание курса по этому этому и вот этому. А также туда сюда и обратно и наоборот и еще вот так...
+                        </p>
+                        <form action="#" class="step-card__form">
+                            <div class="step-card__form-grid">
+                                <div class="step-card__form-field">
+                                    <label for="ident-name" class="step-card__form-label">Имя</label>
+                                    <input type="text" name="name" id="ident-name" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field">
+                                    <label for="ident-second-name" class="step-card__form-label">Фамилия</label>
+                                    <input type="text" name="second-name" id="ident-second-name" class="step-card__input">
+                                </div>
+    
+                                <div class="step-card__form-field">
+                                    <label for="ident-father" class="step-card__form-label">Отчество</label>
+                                    <input type="text" name="father" id="ident-father" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field">
+                                    <label for="ident-passport" class="step-card__form-label">Паспорт №</label>
+                                    <input type="text" name="passport" id="ident-passport" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field step-card__form-field_wide">
+                                    <label for="ident-who" class="step-card__form-label">Кем выдан</label>
+                                    <input type="text" name="who" id="ident-who" class="step-card__input">
+                                </div>
+    
+                                <div class="step-card__form-field">
+                                    <label for="ident-email" class="step-card__form-label">Почта</label>
+                                    <input type="email" name="email" id="ident-email" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field">
+                                    <label for="ident-tel" class="step-card__form-label">Телефон</label>
+                                    <input type="tel" name="tel" id="ident-tel" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field">
+                                    <label for="ident-some1" class="step-card__form-label">Что то</label>
+                                    <input type="text" name="some1" id="ident-some1" class="step-card__input">
+                                </div>
+                                
+                                <div class="step-card__form-field">
+                                    <label for="ident-some2" class="step-card__form-label">Что то</label>
+                                    <input type="text" name="some2" id="ident-some2" class="step-card__input">
+                                </div>
+                            </div>
+                            <button class="step-card__button step-card__form-submit">
+                                Заключить договор
+                            </button>
+                        </form>
+                        <div class="wait-block">
+                            <div class="wait-block__img">
+                                <img src="img/wait.svg" alt="Загрузка" class="js-wait-icon">
+                            </div>
+                            <p class="wait-block__text">
+                                Генерируем договор. Пожалуйста ожидайте. Это может заняь  до 5 минут.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rui-gap-3"></div>
+
+                    <div class="radius-block step-card">
+                        <h3 class="step-card__header">
+                            Шаг 2: Заключение договора конфиденциальности
+                        </h3>
+                        <p class="step-card__sub-header">
+                            Скачайте и ознакомьтесь с договором. После чего поставьте галочку и подпишите его. Это будет нужно дальше в следующем шаге. Можно <a href="#">подписать в PDF</a>
+                        </p>
+                        <div class="step-card__media-wrapper">
+                            <div class="step-card__media">
+                                <a href="#" class="step-card__media-hover">
+                                    <img src="img/task-play-icon.svg" alt="Смотреть">
+                                </a>
+                                <picture>
+                                    <source srcset="img/task-document@1x.webp 1x,
+                                                    img/task-document@2x.webp 2x"
+                                            type="image/webp">
+                                    <img	src="img/task-document@1x.jpg" width="200" height="285" class="step-card__media-img"
+                                            srcset="img/task-document@2x.jpg 2x"
+                                            alt="Документ">
+                                </picture>
+                            </div>
+                            <div class="step-card__media">
+                                <a href="#" class="step-card__media-hover">
+                                    <img src="img/task-play-icon.svg" alt="Смотреть">
+                                </a>
+                                <picture>
+                                    <source srcset="img/task-document@1x.webp 1x,
+                                                    img/task-document@2x.webp 2x"
+                                            type="image/webp">
+                                    <img	src="img/task-document@1x.jpg" width="200" height="285" class="step-card__media-img"
+                                            srcset="img/task-document@2x.jpg 2x"
+                                            alt="Документ">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="step-card__controls-wrapper">
+                            <div class="step-card__control">
+                                <div class="step-card__control-img">
+                                    <img src="img/download-icon.svg" alt="Скачать">
+                                </div>
+                                <p class="step-card__control-text">
+                                    Я ознакомился с <a href="#"> договором</a>
+                                </p>
+                            </div>
+                            <div class="step-card__control">
+                                <div class="step-card__control-img">
+                                    <img src="img/download-icon.svg" alt="Скачать">
+                                </div>
+                                <p class="step-card__control-text">
+                                    Скачать версию для подписи
+                                </p>
+                            </div>
+                        </div>
+                        <button class="step-card__button">
+                            Я ознакомился с договором
+                        </button>
+                    </div>
+
+                    <div class="rui-gap-3"></div>
+
+                    <div class="radius-block step-card">
+                        <h3 class="step-card__header">
+                            Шаг 3: Загрузите необходимые документы
+                        </h3>
+                        <p class="step-card__sub-header">
+                            Загрузите все докуенты указанные в спике ниже. Следуйте образцам
+                        </p>
+
+                        <ul class="step-card__doc-list">
+                            <li class="step-card__doc-list-item">
+                                <h4 class="step-card__doc-list-header">
+                                    1. Фотографии пасспорта
+                                </h4>
+                                <p class="step-card__doc-list-text">
+                                    Страница 1 и 2. Все детали должны быть отчетливо видны. <a href="#">Образец</a>
+                                </p>
+                            </li>
+                            <li class="step-card__doc-list-item">
+                                <h4 class="step-card__doc-list-header">
+                                    2. Фотография Вас с паспортом
+                                </h4>
+                                <p class="step-card__doc-list-text">
+                                    Фотография где вы держите свой паспорт рядом с лицом. <a href="#">Образец</a>
+                                </p>
+                            </li>
+                            <li class="step-card__doc-list-item">
+                                <h4 class="step-card__doc-list-header">
+                                    3. Подписанные страницы с договором
+                                </h4>
+                                <p class="step-card__doc-list-text">
+                                    Фотография где вы держите свой паспорт рядом с лицом. <a href="#">Образец</a>
+                                </p>
+                            </li>
+                            <li class="step-card__doc-list-item">
+                                <h4 class="step-card__doc-list-header">
+                                    4. Короткий видео-код
+                                </h4>
+                                <p class="step-card__doc-list-text">
+                                    Короткое видео на котором отчетливо видноваше лицо и вы подтверждаете факт заключения договора произнеся следующий <a href="#">текст</a>. Вот <a href="#">образец видео</a>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="step-card__control">
+                            <div class="step-card__control-img">
+                                <img src="img/download-icon.svg" alt="Скачать">
+                            </div>
+                            <p class="step-card__control-text step-card__control-text_bold">
+                                Загрузить файлы
+                            </p>
+                        </div>
+
+                        <div class="rui-gap-3"></div>
+
+                        <button class="step-card__button">
+                            Прикрепить документы
+                        </button>
+                    </div>
+
+                    <div class="rui-gap-3"></div>
+
+                    <button class="ident-button">
+                        <img src="img/ident-button-ok.svg" alt="OK">
+                        Пройти идентификацию
+                    </button>
+
+                    <div class="rui-gap-3"></div>
+
+                    <div class="wait-block">
+                        <div class="wait-block__img">
+                            <img src="img/wait.svg" alt="Загрузка" class="js-wait-icon">
+                        </div>
+                        <p class="wait-block__text">
+                            Заявка успешно отправлена. Процесс проверки может занимать до 24 часов. Пожалуйста ожидайте.
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
         </div>
@@ -2601,6 +2644,8 @@
 
     <script src="assets/js/rootui.js"></script>
     <script src="assets/js/rootui-init.js"></script>
+
+    
 
 </body>
 
