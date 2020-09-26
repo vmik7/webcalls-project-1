@@ -1,0 +1,36 @@
+.instruction-note {
+  position: relative;
+  padding-left: 155px;
+}
+
+.instruction-note__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 155px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instruction-note__icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.instruction-note__header {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #393939;
+  margin-bottom: 10px;
+}
+
+.instruction-note__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #757575;
+}

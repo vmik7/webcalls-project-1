@@ -1,0 +1,128 @@
+@import '../mixins';
+@import '../variables';
+
+body {
+    counter-reset: stepcard;
+}
+
+.step-card {
+    position: relative;
+    padding: 40px 75px 45px 155px;
+
+    &::before {
+        counter-increment: stepcard;
+        content: counter(stepcard);
+
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 57px;
+        text-align: center;
+        color: #fff;
+
+        display: block;
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+        background: #6A25FF;
+
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    &__header {
+        font-family: Montserrat, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #393939;
+
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A0A0A0;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__media-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 60px;
+        row-gap: 40px;
+
+        margin: 40px 0;
+    }
+
+    &__media {
+        position: relative;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__media-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__media-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(67, 67, 67, 0.5);
+        border-radius: inherit;
+
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    &__media:hover &__media-hover {
+        opacity: 1;
+    }
+    
+    &__title {
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #393939;
+
+        margin-top: 33px;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        background: #FCFCFC;
+        border: 1px solid #E7EBF4;
+        border-radius: 5px;
+
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #8F8F8F;
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 144px;
+        resize: none;
+        padding: 17px 29px;
+    }
+
+    
+}
