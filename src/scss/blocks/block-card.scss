@@ -16,9 +16,6 @@
     position: relative;
 
     max-width: 290px;
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
     transition: all 0.3s ease;
 
     display: flex;
@@ -39,9 +36,6 @@
     }
 
     &__img {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-        overflow: hidden;
 
         img {
             width: 100%;
@@ -118,10 +112,6 @@
         align-items: center;
 
         margin-top: auto;
-
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-        overflow: hidden;
     }
 
     &__button {
@@ -160,6 +150,5 @@
         justify-content: center;
         align-items: center;
         background: rgba(67, 67, 67, 0.5);
-        border-radius: inherit;
     }
 }

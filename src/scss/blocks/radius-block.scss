@@ -1,0 +1,26 @@
+@import '../mixins';
+@import '../variables';
+
+.radius-block {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    &__inherit {
+        border-radius: inherit;
+        overflow: hidden;
+    }
+
+    &__inherit-top {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        overflow: hidden;
+    }
+
+    &__inherit-bottom {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        overflow: hidden;
+    }
+}
+
