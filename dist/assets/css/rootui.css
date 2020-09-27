@@ -329,7 +329,7 @@ body.rui-no-transition * {
 }
 @media (max-width: 1199.98px) {
     .rui-page-content {
-      padding-top: calc(75px + 60px + 30px) !important;
+      padding-top: calc(75px + 70px + 30px) !important;
     }
 }
 

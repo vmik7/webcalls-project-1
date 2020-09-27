@@ -43,6 +43,8 @@
     <!-- <link rel="stylesheet" href="assets/css/mdb.min.css"> -->
     <!-- Your custom styles (optional) -->
 
+    <link rel="stylesheet" href="css/blocks/content-max-width.css">
+
 </head>
 
 <body class="rui-no-transition rui-navbar-autohide rui-section-lines" data-spy="scroll" data-target=".rui-page-sidebar"
@@ -1207,50 +1209,50 @@
         </div> -->
             <div class="container-fluid">
 
-                <div class="rui-gap-3"></div>
+                <div class="content-max-width">
+                    <div class="row d-flex justify-content-start align-items-left ">
+                        <!-- form-title -->
+                        <div class="col-xl-8 mt-5">
+                            <h1 class="secondary-heading mb-3">История платежей</h1>
+                            <p class="description mb-0">Здесь отображаются все начисления и выводы средств </p>
+                        </div>
+                        <!-- end form-title -->
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-left mt-30 mb-5">
+                        <!-- form-title -->
+                        <div class="col-xl-9 ">
 
-                <div class="row d-flex justify-content-start align-items-left ">
-                    <!-- form-title -->
-                    <div class="col-xl-8 mt-5">
-                      <h1 class="secondary-heading mb-3">История платежей</h1>
-                      <p class="description mb-0">Здесь отображаются все начисления и выводы средств </p>
+                            <table class="table payment_history">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Сумма начисления</th>
+                                        <th scope="col">Дата операции</th>
+                                        <th scope="col">Пользователь</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1945.00 р.</td>
+                                        <td>12.01.20 14:29</td>
+                                        <td>davumoka@gmail.com (2 уровень)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1945.00 р.</td>
+                                        <td>12.01.20 14:29</td>
+                                        <td>davumoka@gmail.com (2 уровень)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1945.00 р.</td>
+                                        <td>12.01.20 14:29</td>
+                                        <td>davumoka@gmail.com (2 уровень)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- end form-title -->
                     </div>
-                    <!-- end form-title -->
-                  </div>
-                  <div class="row d-flex justify-content-start align-items-left mt-30 mb-5">
-                    <!-- form-title -->
-                    <div class="col-xl-9 ">
-            
-                      <table class="table payment_history">
-                        <thead>
-                          <tr>
-                            <th scope="col">Сумма начисления</th>
-                            <th scope="col">Дата операции</th>
-                            <th scope="col">Пользователь</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1945.00 р.</td>
-                            <td>12.01.20 14:29</td>
-                            <td>davumoka@gmail.com (2 уровень)</td>
-                          </tr>
-                          <tr>
-                            <td>1945.00 р.</td>
-                            <td>12.01.20 14:29</td>
-                            <td>davumoka@gmail.com (2 уровень)</td>
-                          </tr>
-                          <tr>
-                            <td>1945.00 р.</td>
-                            <td>12.01.20 14:29</td>
-                            <td>davumoka@gmail.com (2 уровень)</td>
-                          </tr>
-                        </tbody>
-                      </table>
-            
-                    </div>
-                    <!-- end form-title -->
-                  </div>
+                </div>
 
             </div>
         </div>
