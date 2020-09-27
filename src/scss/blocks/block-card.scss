@@ -21,6 +21,8 @@
     display: flex;
     flex-direction: column;
 
+    border: 1px solid #e6ecf0;
+
     @media screen and (max-width: 750px) {
         margin: 0 auto;
     }
@@ -31,20 +33,27 @@
 
     &:hover:not(.block-card_locked) &__img img,
     &:focus:not(.block-card_locked) &__img img {
-        transition: transform 5s linear;
+        transition: transform 5s linear, opacity 0.3s ease;
         transform: scale(1.3);
+        opacity: 1;
     }
 
     &__img {
+        margin: -1px;
+        cursor: pointer;
 
         img {
             width: 100%;
             object-fit: cover;
+            opacity: 0.9;
         }
     }
 
     &__content {
         padding: 25px 26px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
     }
 
     &__title {
@@ -53,15 +62,18 @@
         font-weight: 800;
         font-size: 16px;
         line-height: 20px;
-        color: #393939;
+        color: #393939 !important;
+
+        transition: all 0.3s ease;
 
         &:hover, &:focus {
-            color: #6a25ff;
+            color: #6a25ff !important;
+            cursor: pointer;
         }
     }
 
     &__sub-title {
-        margin: 10px 0 15px 0;
+        margin: 10px 0 20px 0;
         font-family: Roboto, sans-serif;
         font-weight: 300;
         font-size: 13px;
@@ -75,13 +87,17 @@
     &__list {
         margin: 0;
         padding: 0;
+        margin-top: auto;
     }
 
     &__list-item {
         list-style: none;
         display: flex;
         align-items: center;
-        margin-bottom: 7px;
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
     }
 
     &__item-icon {
@@ -111,7 +127,7 @@
         display: flex;
         align-items: center;
 
-        margin-top: auto;
+        margin: -1px;
     }
 
     &__button {
@@ -128,11 +144,11 @@
         justify-content: center;
         border: none;
         color: #fff;
+
         transition: all 0.3s ease;
 
         &:hover, &:focus {
-            color: #212529;
-            background: #fff;
+            background: #4305C7;
         }
     }
 
@@ -150,5 +166,8 @@
         justify-content: center;
         align-items: center;
         background: rgba(67, 67, 67, 0.5);
+        z-index: 2;
+
+        margin: -1px;
     }
 }

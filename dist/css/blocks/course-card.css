@@ -7,6 +7,11 @@
   color: #393939;
 }
 
+.course-card__price span {
+  font-weight: 700;
+  font-size: 25px;
+}
+
 .course-card_activated .block-card__bottom {
   background: #eaffc8;
 }
