@@ -1,0 +1,23 @@
+@import '../mixins';
+@import '../variables';
+
+.page-heading {
+        margin-bottom: 40px;
+
+		&__title {
+            font-family: Roboto, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: #22212C;
+            margin: 0;
+		}
+
+		&__description {
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            color: #BCBCBC;
+            margin: 16px 0 0 0;
+		}
+}
