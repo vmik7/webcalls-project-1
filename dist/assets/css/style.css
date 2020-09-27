@@ -843,9 +843,25 @@ margin-left: 0 !important;
 }
 
 .list-group-referal.list-group-item{
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 300;
 }
+
+.list-group-item {
+    position: relative;
+    padding-left: 44px !important;
+    border-radius: 0 !important;
+}
+
+.list-group-item[onclick]::before {
+    content: url('../../img/plus-icon.svg');
+    position: absolute;
+    /* top: 50%; */
+    /* transform: translate3d(0, -50%, 0); */
+    top: 13px;
+    left: 16px;
+}
+
 
 
 #measurements_content .custom-control-label.check_ok::before{
