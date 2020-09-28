@@ -147,33 +147,9 @@
 }
 
 .block-card__button {
-  width: 128px;
-  height: 30px;
-  background: #6A25FF;
-  border-radius: 5px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.block-card__button:hover,
-.block-card__button:focus {
-  background: #4305C7;
+  min-width: 128px;
+  height: 35px;
+  line-height: 35px;
 }
 
 .block-card:not(.block-card_locked) .block-card__locked-case {

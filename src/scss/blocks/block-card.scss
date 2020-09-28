@@ -131,25 +131,9 @@
     }
 
     &__button {
-        width: 128px;
-        height: 30px;
-        background: #6A25FF;
-        border-radius: 5px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        color: #fff;
-
-        transition: all 0.3s ease;
-
-        &:hover, &:focus {
-            background: #4305C7;
-        }
+        min-width: 128px;
+        height: 35px;
+        line-height: 35px;
     }
 
     &:not(.block-card_locked) &__locked-case {

@@ -435,6 +435,106 @@ textarea:focus {
   margin: 0 auto;
 }
 
+.page-heading {
+  margin-bottom: 30px;
+}
+
+.page-heading__title {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #22212C;
+  margin: 0;
+}
+
+.page-heading__description {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BCBCBC;
+  margin: 16px 0 10px 0;
+}
+
+.page-button {
+  background: #6A25FF;
+  border-radius: 5px;
+  border: 0;
+  height: 40px;
+  padding: 0 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.page-button:hover,
+.page-button:focus {
+  background: #4305C7;
+  color: #fff;
+}
+
+.page-button_wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.page-button_big {
+  height: 52px;
+  font-size: 16px;
+}
+
+.page-button_x-big {
+  height: 73px;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.3);
+          box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.3);
+}
+
+.content-max-width {
+  max-width: 980px;
+  padding: 15px;
+}
+
+.radius-block {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.radius-block__inherit {
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.radius-block__inherit-top {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  overflow: hidden;
+}
+
+.radius-block__inherit-bottom {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1182px) {
   ._container {
     max-width: 970px;

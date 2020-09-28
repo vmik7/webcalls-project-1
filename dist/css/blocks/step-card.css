@@ -169,20 +169,6 @@ body {
   width: 100%;
 }
 
-.step-card__button {
-  display: block;
-  border: 0;
-  background: #6A25FF;
-  border-radius: 5px;
-  height: 52px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: #fff;
-}
-
 .step-card__form-submit {
   margin-top: 40px;
 }

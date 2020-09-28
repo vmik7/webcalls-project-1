@@ -1,0 +1,45 @@
+@import '../mixins';
+@import '../variables';
+
+.page-button {
+    background: #6A25FF;
+    border-radius: 5px;
+    border: 0;
+
+    height: 40px;
+    padding: 0 20px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+
+    transition: all 0.3s ease;
+
+    &:hover, &:focus {
+        background: #4305C7;
+        color: #fff;
+    }
+
+    &_wide {
+        display: flex;
+        width: 100%;
+    }
+
+    &_big {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    &_x-big {
+        height: 73px;
+        border-radius: 10px;
+        font-size: 20px;
+
+        box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.3);
+    }
+}

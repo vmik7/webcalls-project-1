@@ -1,6 +1,8 @@
 @import '../mixins';
 @import '../variables';
 
+$popup-mobile: 450;
+
 .popup {
     position: fixed;
     top: 0;
@@ -21,7 +23,7 @@
         padding: 50px 80px 55px 80px;
         text-align: center;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             padding: 20px 15px 30px 15px;
         }
     }
@@ -36,13 +38,13 @@
         border: 0;
         background: none;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             top: 15px;
             right: 12px;
         }
 
         img {
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: $popup-mobile + px) {
                 width: 15px;
             }
         }
@@ -51,7 +53,7 @@
     &__img {
 
         img {
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: $popup-mobile + px) {
                 height: 90px;
             }
         }
@@ -59,7 +61,7 @@
         &_smaller {
 
             img {
-                @media screen and (max-width: 450px) {
+                @media screen and (max-width: $popup-mobile + px) {
                     height: 70px;
                 }
             }
@@ -79,7 +81,7 @@
 
         margin-bottom: 8px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             font-size: 14px;
             line-height: 18px;
         }
@@ -94,7 +96,7 @@
 
         margin: 0 0 40px 0;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             font-size: 12px;
             line-height: 16px;
 
@@ -103,23 +105,12 @@
     }
 
     &__button {
-        height: 40px;
         min-width: 197px;
-        padding: 0 20px;
-        background: #5517DA;
-        border-radius: 4px;
-        border: 0;
 
-        font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        color: #fff;
-
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             height: 35px;
+            line-height: 35px;
             font-size: 12px;
-            line-height: 16px;
             border-radius: 3px;
         }
     }
@@ -128,7 +119,7 @@
         padding: 40px 70px 45px 70px;
         width: 460px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             padding: 20px 15px 30px 15px;
         }
     }
@@ -136,7 +127,7 @@
     &_payment &__img + &__title {
         margin-top: 30px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             margin-top: 20px;
         }
     }
@@ -147,21 +138,17 @@
 
         margin-bottom: 17px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             font-size: 14px;
             line-height: 18px;
         }
-    }
-
-    &_payment &__button {
-        width: 100%;
     }
 
     &__form {
         margin-top: 45px;
         margin-bottom: 30px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             margin-top: 30px;
             margin-bottom: 20px;
         }
@@ -180,7 +167,7 @@
 
         margin: 14px 0 12px 0;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             font-size: 12px;
             line-height: 16px;
 
@@ -203,7 +190,7 @@
         font-size: 14px;
         line-height: 16px;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             height: 35px;
             border-radius: 3px;
 
@@ -232,7 +219,7 @@
 
         margin: 25px 0 0 0;
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: $popup-mobile + px) {
             font-size: 10px;
             margin-top: 20px;
         }
