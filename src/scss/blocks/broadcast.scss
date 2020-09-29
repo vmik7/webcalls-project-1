@@ -1,0 +1,48 @@
+@import '../mixins';
+@import '../variables';
+
+.broadcast {
+
+
+    &__wrapper {
+        @media screen and (min-width: $md2 + 1 + px) {
+            display: flex;
+        }
+    }   
+
+    &__video {
+        position: relative;
+
+        @media screen and (min-width: $md2 + 1 + px) {
+            flex: 1;
+            min-height: 400px;
+            margin-right: 20px;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__chat {
+        position: relative;
+
+        @media screen and (min-width: $md2 + 1 + px) {
+            flex: 0 0 30%;
+            min-height: 400px;
+            margin-right: 40px;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
