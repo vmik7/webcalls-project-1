@@ -75,6 +75,7 @@ body {
 
 .step-card__media-img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -136,19 +137,7 @@ body {
   position: relative;
 }
 
-.step-card__form-field_wide {
-  grid-column: span 2;
-}
-
 .step-card__form-label {
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
-  width: 100px;
-  text-align: right;
-  padding-right: 24px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -167,6 +156,7 @@ body {
   color: #8F8F8F;
   height: 35px;
   width: 100%;
+  padding: 0 10px;
 }
 
 .step-card__form-submit {
@@ -241,4 +231,180 @@ body {
   line-height: 15px;
   color: #A0A0A0;
   margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .step-card__form-label {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+    width: 100px;
+    text-align: right;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .step-card__form-label {
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .step-card__form-field_wide {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .step-card__media-wrapper {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  .step-card__media_horizontal {
+    max-width: 200px;
+  }
+
+  .step-card__media_vertical {
+    max-width: 150px;
+  }
+
+  .step-card__form-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .step-card {
+    padding: 110px 40px 35px 40px;
+  }
+
+  .step-card::before {
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+
+  .step-card__header {
+    text-align: center;
+  }
+
+  .step-card__sub-header {
+    text-align: center;
+  }
+
+  .step-card__media-wrapper {
+    margin: 30px 0;
+  }
+
+  .step-card__form {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .step-card__form-submit {
+    margin-top: 25px;
+  }
+
+  .step-card__doc-list {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .step-card {
+    padding: 95px 25px 25px 25px;
+  }
+
+  .step-card::before {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    top: 25px;
+  }
+
+  .step-card__header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .step-card__sub-header {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .step-card__paragraph {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .step-card__media-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .step-card__title {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .step-card__form-grid {
+    row-gap: 10px;
+  }
+
+  .step-card__form-label {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+
+  .step-card__button {
+    height: 45px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .step-card__textarea {
+    padding: 15px 15px;
+  }
+
+  .step-card__controls-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .step-card__control-text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .step-card__doc-list-header {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .step-card__doc-list-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .step-card__form-field {
+    margin-left: 100px;
+  }
 }

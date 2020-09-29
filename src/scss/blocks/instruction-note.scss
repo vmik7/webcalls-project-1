@@ -2,19 +2,26 @@
 @import '../variables';
 
 .instruction-note {
-    position: relative;
-    padding-left: 155px;
+    @media screen and (min-width: $md4 + 1 + px) {
+        position: relative;
+        padding-left: 155px;
+    }
 
     &__icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 155px;
-        align-items: center;
 
         img {
             display: block;
             margin: 0 auto;
+        }
+
+        @media screen and (min-width: $md4 + 1 + px) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 155px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            margin-bottom: 30px;
         }
     }
 
@@ -26,6 +33,12 @@
         color: #393939;
         
         margin-bottom: 10px;
+
+        @media screen and (max-width: $md4 + px) {
+            text-align: center;
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 
     &__text {
@@ -36,5 +49,9 @@
         color: #757575;
 
         margin: 0;
+
+        @media screen and (max-width: $md4 + px) {
+            text-align: center;
+        }
     }
 }

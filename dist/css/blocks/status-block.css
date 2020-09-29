@@ -1,6 +1,5 @@
 .status-block {
   position: relative;
-  width: 421px;
   min-height: 76px;
   padding: 10px 30px;
   background: var(--bg-color, #ECECEC);
@@ -59,4 +58,11 @@
   font-size: 11px;
   line-height: 13px;
   color: var(--text-color, #565656);
+}
+
+@media screen and (max-width: 479px) {
+  .status-block {
+    min-height: 65px;
+    padding: 10px 18px;
+  }
 }

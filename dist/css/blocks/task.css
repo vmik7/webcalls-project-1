@@ -9,6 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  row-gap: 20px;
 }
 
 .task__status {
@@ -22,4 +23,23 @@
       -ms-flex: 0 1 29.86%;
           flex: 0 1 29.86%;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .task__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .task__status {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .task__action-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }

@@ -1,0 +1,19 @@
+@import '../mixins';
+@import '../variables';
+
+.ident-button {
+    img {
+        margin-right: 20px;
+
+        @media screen and (max-width: $md4 + px) {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and (max-width: $md4 + px) {
+        height: 55px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}

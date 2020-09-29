@@ -1,18 +1,3 @@
-.instruction-note {
-  position: relative;
-  padding-left: 155px;
-}
-
-.instruction-note__icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 155px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .instruction-note__icon img {
   display: block;
   margin: 0 auto;
@@ -34,4 +19,34 @@
   line-height: 15px;
   color: #757575;
   margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .instruction-note {
+    position: relative;
+    padding-left: 155px;
+  }
+
+  .instruction-note__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .instruction-note__icon {
+    margin-bottom: 30px;
+  }
+
+  .instruction-note__header {
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .instruction-note__text {
+    text-align: center;
+  }
 }

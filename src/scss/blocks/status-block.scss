@@ -25,7 +25,7 @@
     }
 
     position: relative;
-    width: 421px;
+    // max-width: 421px;
     min-height: 76px;
     padding: 10px 30px;
     background: var(--bg-color, #ECECEC);
@@ -38,6 +38,11 @@
     row-gap: 3px;
 
     border-left: 5px solid var(--header-color, #8F8F8F);
+    
+    @media screen and (max-width: $md4 + px) {
+        min-height: 65px;
+        padding: 10px 18px;
+    }
 
     &__title {
         margin: 0;

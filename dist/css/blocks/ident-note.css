@@ -1,32 +1,46 @@
 .ident-note {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-}
-
-.ident-note__status {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  display: grid;
+  grid-template-columns: 76px 1fr 40%;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 
 .ident-note__text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
   color: #757575;
+}
+
+@media screen and (max-width: 900px) {
+  .ident-note {
+    grid-template-columns: 76px 1fr;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ident-note {
+    grid-template-columns: 1fr;
+  }
+
+  .ident-note__icon {
+    text-align: center;
+  }
+
+  .ident-note__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 480px) {
+  .ident-note__text {
+    grid-column: span 2;
+  }
 }

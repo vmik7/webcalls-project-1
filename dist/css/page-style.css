@@ -508,7 +508,6 @@ textarea:focus {
 
 .content-max-width {
   max-width: 980px;
-  padding: 15px;
 }
 
 .radius-block {
@@ -535,19 +534,25 @@ textarea:focus {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .content-max-width {
+    padding: 15px;
+  }
+}
+
 @media screen and (max-width: 1182px) {
   ._container {
     max-width: 970px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   ._container {
     max-width: 750px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   ._container {
     max-width: none;
     padding: 0 10px;

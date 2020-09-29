@@ -3,5 +3,8 @@
 
 .content-max-width {
     max-width: 980px;
-    padding: 15px;
+
+    @media screen and (min-width: $md3 + 1 + px) {
+        padding: 15px;
+    }
 }

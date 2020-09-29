@@ -1,0 +1,16 @@
+.ident-button img {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  .ident-button img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .ident-button {
+    height: 55px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}

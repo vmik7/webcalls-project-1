@@ -2,23 +2,31 @@
 @import '../variables';
 
 .ident-note {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 76px 1fr 40%;
+    column-gap: 30px;
 
-    column-gap: 40px;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 76px 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    @media screen and (max-width: $md4 + px) {
+        grid-template-columns: 1fr;
+    }
 
     &__icon {
-
+        @media screen and (max-width: $md4 + px) {
+            text-align: center;
+        }
     }
 
     &__status {
-        flex: 1 1 100%;
-
+        // flex: 1 1 100%;
     }
 
     &__text {
-        flex: 0 0 33%;
+        // flex: 0 0 33%;
         margin: 0;
 
         font-family: Roboto, sans-serif;
@@ -26,5 +34,12 @@
         font-size: 12px;
         line-height: 14px;
         color: #757575;
+
+        @media screen and (max-width: 900px) and (min-width: $md4 + 1 + px) {
+            grid-column: span 2;
+        }
+        @media screen and (max-width: $md4 + px) {
+            text-align: center;
+        }
     }
 }

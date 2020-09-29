@@ -6,6 +6,16 @@
 
     &__img {
         margin-bottom: 23px;
+
+        @media screen and (max-width: $md4 + px) {
+            margin-bottom: 15px;
+        }
+
+        img {
+            @media screen and (max-width: $md4 + px) {
+                width: 45px;
+            }
+        }
     }
 
     &__text {
@@ -13,5 +23,12 @@
         font-size: 14px;
         line-height: 18px;
         color: #A0A0A0;
+
+        margin: 0;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 }
