@@ -145,29 +145,8 @@ body {
   color: #393939;
 }
 
-.step-card__input {
-  background: #FCFCFC;
-  border: 1px solid #E7EBF4;
-  border-radius: 5px;
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #8F8F8F;
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-}
-
 .step-card__form-submit {
   margin-top: 40px;
-}
-
-.step-card__textarea {
-  width: 100%;
-  min-height: 144px;
-  resize: none;
-  padding: 17px 29px;
 }
 
 .step-card__controls-wrapper {
@@ -373,10 +352,6 @@ body {
     height: 45px;
     font-size: 12px;
     line-height: 17px;
-  }
-
-  .step-card__textarea {
-    padding: 15px 15px;
   }
 
   .step-card__controls-wrapper {

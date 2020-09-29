@@ -251,30 +251,6 @@ body {
         }
     }
 
-    &__input {
-        background: #FCFCFC;
-        border: 1px solid #E7EBF4;
-        border-radius: 5px;
-
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        color: #8F8F8F;
-
-        height: 35px;
-        width: 100%;
-        
-        padding: 0 10px;
-
-        @media screen and (min-width: $md4 + 1 + px) {
-            
-        }
-        @media screen and (max-width: $md4 + px) {
-            
-        }
-    }
-
     &__button {
         @media screen and (max-width: $md4 + px) {
             height: 45px;
@@ -288,17 +264,6 @@ body {
 
         @media screen and (max-width: $md3 + px) {
             margin-top: 25px;
-        }
-    }
-
-    &__textarea {
-        width: 100%;
-        min-height: 144px;
-        resize: none;
-        padding: 17px 29px;
-
-        @media screen and (max-width: $md4 + px) {
-            padding: 15px 15px;
         }
     }
 
