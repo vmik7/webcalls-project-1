@@ -3,6 +3,14 @@
 
 .form {
 
+    &__label {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #393939;
+    }
+
     &__input {
         display: block;
         width: 100%;

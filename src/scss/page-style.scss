@@ -34,12 +34,12 @@
 
 // _focus-outline class for elements, needed custom outline
 ._focus-outline:focus {
-    @include focus-outline();
+    // @include focus-outline();
 }
 
 // setting custom focus outline for some elements
 a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
-    @include focus-outline();
+    // @include focus-outline();
 }
 
 // _no-focus class for elements, which not needed focus
@@ -79,3 +79,5 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
 @import 'blocks/content-max-width';
 @import 'blocks/radius-block';
 @import 'blocks/form';
+@import 'blocks/cards-wrapper';
+@import 'blocks/check';

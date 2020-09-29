@@ -1222,20 +1222,20 @@
                         <div class="ident-note__icon">
                             <img src="img/identification-error.svg" alt="Шпион">
                         </div>
-                        <div class="ident-note__status status-block status-block_red">
-                            <p class="status-block__title">
-                                Личность не идентифицирована!
-                            </p>
-                            <p class="status-block__text">
-                                Доступ к обучению закрыт. Пройдите процедуру идентифицаии ниже
-                            </p>
+                        <div class="ident-note__status">
+                            <div class="status-block status-block_red">
+                                <p class="status-block__title">
+                                    Личность не идентифицирована!
+                                </p>
+                                <p class="status-block__text">
+                                    Доступ к обучению закрыт. Пройдите процедуру идентифицаии ниже
+                                </p>
+                            </div>
                         </div>
                         <p class="ident-note__text">
                             Согласно п 1 1 договора оферты пользователь обязан пройти процедуру идентификации прежду чемполучит доступ к курсу. Подробную информация и о томкак пройти идентификацию <a href="#">читайте здесь</a> 
                         </p>
                     </div>
-
-                    <div class="rui-gap-3"></div>
     
                     <div class="radius-block step-card">
                         <h3 class="step-card__header">
@@ -1247,47 +1247,47 @@
                         <form action="#" class="form step-card__form">
                             <div class="step-card__form-grid">
                                 <div class="step-card__form-field">
-                                    <label for="ident-name" class="step-card__form-label">Имя</label>
+                                    <label for="ident-name" class="form__label step-card__form-label">Имя</label>
                                     <input type="text" name="name" id="ident-name" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field">
-                                    <label for="ident-second-name" class="step-card__form-label">Фамилия</label>
+                                    <label for="ident-second-name" class="form__label step-card__form-label">Фамилия</label>
                                     <input type="text" name="second-name" id="ident-second-name" class="form__input">
                                 </div>
     
                                 <div class="step-card__form-field">
-                                    <label for="ident-father" class="step-card__form-label">Отчество</label>
+                                    <label for="ident-father" class="form__label step-card__form-label">Отчество</label>
                                     <input type="text" name="father" id="ident-father" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field">
-                                    <label for="ident-passport" class="step-card__form-label">Паспорт №</label>
+                                    <label for="ident-passport" class="form__label step-card__form-label">Паспорт №</label>
                                     <input type="text" name="passport" id="ident-passport" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field step-card__form-field_wide">
-                                    <label for="ident-who" class="step-card__form-label">Кем выдан</label>
+                                    <label for="ident-who" class="form__label step-card__form-label">Кем выдан</label>
                                     <input type="text" name="who" id="ident-who" class="form__input">
                                 </div>
     
                                 <div class="step-card__form-field">
-                                    <label for="ident-email" class="step-card__form-label">Почта</label>
+                                    <label for="ident-email" class="form__label step-card__form-label">Почта</label>
                                     <input type="email" name="email" id="ident-email" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field">
-                                    <label for="ident-tel" class="step-card__form-label">Телефон</label>
+                                    <label for="ident-tel" class="form__label step-card__form-label">Телефон</label>
                                     <input type="tel" name="tel" id="ident-tel" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field">
-                                    <label for="ident-some1" class="step-card__form-label">Что то</label>
+                                    <label for="ident-some1" class="form__label step-card__form-label">Что то</label>
                                     <input type="text" name="some1" id="ident-some1" class="form__input">
                                 </div>
                                 
                                 <div class="step-card__form-field">
-                                    <label for="ident-some2" class="step-card__form-label">Что то</label>
+                                    <label for="ident-some2" class="form__label step-card__form-label">Что то</label>
                                     <input type="text" name="some2" id="ident-some2" class="form__input">
                                 </div>
                             </div>
@@ -1304,8 +1304,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="rui-gap-3"></div>
 
                     <div class="radius-block step-card">
                         <h3 class="step-card__header">
@@ -1344,12 +1342,17 @@
                         </div>
                         <div class="step-card__controls-wrapper">
                             <div class="step-card__control">
-                                <div class="step-card__control-img">
+                                <!-- <div class="step-card__control-img">
                                     <img src="img/download-icon.svg" alt="Скачать">
                                 </div>
                                 <p class="step-card__control-text">
                                     Я ознакомился с <a href="#"> договором</a>
-                                </p>
+                                </p> -->
+                                <label class="check step-card__control-text">
+                                    <input class="check__input _visually-hidden" type="checkbox" checked>
+                                    <span class="check__box"></span>
+                                    Я ознакомился с <a href="#"> договором</a>
+                                </label>
                             </div>
                             <div class="step-card__control">
                                 <div class="step-card__control-img">
@@ -1364,8 +1367,6 @@
                             Я ознакомился с договором
                         </button>
                     </div>
-
-                    <div class="rui-gap-3"></div>
 
                     <div class="radius-block step-card">
                         <h3 class="step-card__header">
@@ -1450,13 +1451,15 @@
                         <div class="ident-note__icon">
                             <img src="img/identification-ok.svg" alt="Нормальный парень">
                         </div>
-                        <div class="ident-note__status status-block status-block_green">
-                            <p class="status-block__title">
-                                Личность идентифицирована!
-                            </p>
-                            <p class="status-block__text">
-                                Идентификация успешно пройдена. Доступ к обучению открыт. 
-                            </p>
+                        <div class="ident-note__status">
+                            <div class="status-block status-block_green">
+                                <p class="status-block__title">
+                                    Личность идентифицирована!
+                                </p>
+                                <p class="status-block__text">
+                                    Идентификация успешно пройдена. Доступ к обучению открыт. 
+                                </p>
+                            </div>
                         </div>
                         <p class="ident-note__text">
                             Вы успешно прошли процедуру идентификации и можете плучить услугу в полном объеме. Напоминаем что в случае несанкционированного  распространение интеллектуальной собственности вы будете привлечены к уголовной ответсвенности согласно п 6.2 <a href="#">публичного договора</a>

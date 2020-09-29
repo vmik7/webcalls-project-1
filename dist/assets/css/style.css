@@ -855,10 +855,11 @@ margin-left: 0 !important;
 
 .list-group-item[onclick]::before {
     content: url('../../img/plus-icon.svg');
+    width: 16px;
+    height: 16px;
     position: absolute;
-    /* top: 50%; */
-    /* transform: translate3d(0, -50%, 0); */
-    top: 13px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
     left: 16px;
 }
 
@@ -936,7 +937,7 @@ margin-left: 0 !important;
     border-radius: 10px;
     padding-top: 25px;
     max-width: 674px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card_eating > .row{
@@ -1326,7 +1327,7 @@ table.table.payment_history th, table.table td{
 }
 
 .questions-card{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .questions-card .card-header{
@@ -1916,7 +1917,7 @@ input.error_input{
     background: #FFFFFF;
     border: 1px solid #F3F3F3;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
 
@@ -1944,7 +1945,7 @@ input.error_input{
     font-weight: 300 !important;
     font-size: 14px !important;
     line-height: 16px !important;
-    color: #93979E !important;
+    color: #22212c !important;
 }
 
 .card-payment .card-sub-title {
@@ -1954,7 +1955,7 @@ input.error_input{
     font-size: 16px;
     line-height: 19px;
     
-    color: #565656;
+    color: #bcbcbc;
 }
 .card-payment .card-separator{
     height: 3px;
@@ -2331,7 +2332,7 @@ input.error_input{
         background: #FFFFFF;
         border: 1px solid #F3F3F3;
         box-sizing: border-box;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
         border-radius: 4px;
     }
     .navbar{

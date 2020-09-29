@@ -2,22 +2,41 @@
 @import '../variables';
 
 .page-heading {
-        margin-bottom: 30px;
+      margin-bottom: 55px;
 
-		&__title {
+      @media screen and (max-width: $md3 + px) {
+            margin-bottom: 40px;
+      }
+      @media screen and (max-width: $md4 + px) {
+            margin-bottom: 30px;
+      }
+
+
+      &__title {
             font-family: Roboto, sans-serif;
             font-weight: bold;
             font-size: 18px;
             line-height: 21px;
             color: #22212C;
             margin: 0;
-		}
 
-		&__description {
+            @media screen and (max-width: $md4 + px) {
+                  font-size: 16px;
+                  line-height: 18px;
+            }
+      }
+
+      &__description {
             font-family: Roboto, sans-serif;
             font-size: 14px;
             line-height: 18px;
             color: #BCBCBC;
-            margin: 16px 0 10px 0;
-		}
+            margin: 16px 0 0 0;
+
+            @media screen and (max-width: $md4 + px) {
+                  font-size: 12px;
+                  line-height: 15px;
+                  margin: 10px 0 0 0;
+            }
+      }
 }

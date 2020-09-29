@@ -5,6 +5,7 @@ body {
 .step-card {
   position: relative;
   padding: 40px 75px 45px 155px;
+  margin-top: 55px;
 }
 
 .step-card::before {
@@ -135,14 +136,6 @@ body {
 
 .step-card__form-field {
   position: relative;
-}
-
-.step-card__form-label {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #393939;
 }
 
 .step-card__form-submit {

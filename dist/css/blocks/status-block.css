@@ -54,7 +54,6 @@
 .status-block__text {
   margin: 0;
   font-family: Roboto, sans-serif;
-  font-weight: 300;
   font-size: 11px;
   line-height: 13px;
   color: var(--text-color, #565656);

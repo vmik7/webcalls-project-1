@@ -1,0 +1,28 @@
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    row-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}

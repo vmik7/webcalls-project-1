@@ -407,21 +407,6 @@ textarea {
   overflow: hidden;
 }
 
-._focus-outline:focus {
-  outline: 3px solid #42a0da;
-  outline-offset: 2px;
-}
-
-a:focus,
-link:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 3px solid #42a0da;
-  outline-offset: 2px;
-}
-
 ._no-focus-outline:focus {
   outline: 0;
 }
@@ -436,7 +421,7 @@ textarea:focus {
 }
 
 .page-heading {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .page-heading__title {
@@ -453,7 +438,7 @@ textarea:focus {
   font-size: 14px;
   line-height: 18px;
   color: #BCBCBC;
-  margin: 16px 0 10px 0;
+  margin: 16px 0 0 0;
 }
 
 .page-button {
@@ -534,6 +519,14 @@ textarea:focus {
   overflow: hidden;
 }
 
+.form__label {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #393939;
+}
+
 .form__input {
   display: block;
   width: 100%;
@@ -584,6 +577,58 @@ textarea:focus {
   padding: 17px 29px;
 }
 
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px;
+}
+
+.check {
+  position: relative;
+  padding-left: 2.22em;
+}
+
+.check__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  width: 1.43em;
+  height: 1.43em;
+  border-radius: 0.4em;
+  border: 0.15em solid #6A25FF;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 60% 70%;
+  background-size: 90%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.check__input:focus + .check__box {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+}
+
+.check__input:checked + .check__box {
+  background-color: #6A25FF;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L5.125 10L2 6.36364' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
 @media screen and (min-width: 768px) {
   .content-max-width {
     padding: 15px;
@@ -602,14 +647,48 @@ textarea:focus {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    row-gap: 25px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   ._container {
     max-width: none;
     padding: 0 10px;
   }
+
+  .page-heading {
+    margin-bottom: 40px;
+  }
+
+  .cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  .page-heading {
+    margin-bottom: 30px;
+  }
+
+  .page-heading__title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .page-heading__description {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 0 0 0;
+  }
+
   .form__input {
     height: 35px;
     padding: 0 10px;
