@@ -50,6 +50,8 @@
     <!-- <link rel="stylesheet" href="assets/css/mdb.min.css"> -->
     <!-- Your custom styles (optional) -->
 
+    <link rel="stylesheet" href="css/blocks/profile.css">
+
 </head>
 
 <body class="rui-no-transition rui-navbar-autohide rui-section-lines" data-spy="scroll" data-target=".rui-page-sidebar"
@@ -1212,156 +1214,83 @@
             <div class="container-fluid">
 
                 <div class="content-max-width">
-                    <form action="#" class="form">
-                        <div class="row d-flex justify-content-start align-items-left">
-                            <!-- form-title -->
-                            <div class="col-12 page-heading">
-                                <h1 class="page-heading__title">Персональные данные</h1>
-                                <p class="page-heading__description">Укажите информацию о себе. Мы сможем связаться с Вами разными способами </p>
+                    <form action="#" class="form profile">
+
+                        <div class="page-heading profile__heading">
+                            <h1 class="page-heading__title">Персональные данные</h1>
+                            <p class="page-heading__description">Укажите информацию о себе. Мы сможем связаться с Вами разными способами </p>
+                        </div>
+
+                        <div class="profile__grid-wrapper">
+                            <div class="profile__avatar">
+                                <div class="profile__avatar-img">
+                                    <img src="img/default-avatar.svg" alt="Аватарка">
+                                </div>
+                                <a href="#" class="profile__link">Загрузить фото</a>
                             </div>
-                            <!-- end form-title -->
-                    
-                            <div class="col-12 col-md-12 col-lg-12 col-xl-2 mb-20 mb--0 ">
-                                <form class="">
-                                    <div class="m-0">
-                                        <div class="mb-20 text-center">
-                                        <img src="img/default-avatar.svg" alt="Аватарка" class="mw-100">
-                                        </div>
-                                        <div class="d-flex justify-content-center">
-                                            <input id="upload_input" type="file"/>
-                                            <a href="#" id="upload_link">Загрузить фото</a>​
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="profile__field">
+                                <label for="profile-name" class="form__label profile__label">Имя</label>
+                                <input type="text" name="name" id="profile-name" class="form__input profile__input">
                             </div>
-                    
-                            <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-5">
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Имя</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Фамилия</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Возраст</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Рост</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-sname" class="form__label profile__label">Фамилия</label>
+                                <input type="text" name="sname" id="profile-sname" class="form__input profile__input">
                             </div>
-                    
-                            <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-5">
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Почта</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Телефон</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Vkontakte</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
-                                <div class="row mb-15">
-                                    <div class="col-3 my-auto ml-auto pr-0 text-right">
-                                        <label for="exampleForm2" class="form__label mb-0">Instagram</label>
-                                    </div>
-                                    <div class="col-9">
-                                        <input type="text" id="exampleForm2" class="form__input">
-                                    </div>
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-age" class="form__label profile__label">Возраст</label>
+                                <input type="text" name="age" id="profile-age" class="form__input profile__input">
                             </div>
-                    
-                            <!-- form-title -->
-                            <div class="col-12 page-heading mt-70">
-                                <h1 class="page-heading__title">Анкета пользователя</h1>
-                                <p class="page-heading__description">Укажите информацию о себе. Мы сможем связаться с Вами разными способами </p>
+                            <div class="profile__field">
+                                <label for="profile-height" class="form__label profile__label">Рост</label>
+                                <input type="text" name="height" id="profile-height" class="form__input profile__input">
                             </div>
-                            <!-- end form-title -->
-                    
-                            <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="row mb-15">
-                                <div class="col-4 my-auto ml-auto pr-0 text-right">
-                                    <label for="exampleForm2" class="form__label mb-0">Вопрос про то это и вот то и потом так вот?</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" id="exampleForm2" class="form__input">
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-email" class="form__label profile__label">Почта</label>
+                                <input type="email" name="email" id="profile-email" class="form__input profile__input">
                             </div>
-                            <div class="row mb-15">
-                                <div class="col-4 my-auto ml-auto pr-0 text-right">
-                                    <label for="exampleForm2" class="form__label mb-0">Вопрос про то и это?</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" id="exampleForm2" class="form__input">
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-tel" class="form__label profile__label">Телефон</label>
+                                <input type="tel" name="tel" id="profile-tel" class="form__input profile__input">
                             </div>
-                            <div class="row mb-15">
-                                <div class="col-4 my-auto ml-auto pr-0 text-right">
-                                    <label for="exampleForm2" class="form__label mb-0">Вопрос?</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" id="exampleForm2" class="form__input">
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-vk" class="form__label profile__label">Vkontakte</label>
+                                <input type="text" name="vk" id="profile-vk" class="form__input profile__input">
                             </div>
-                            <div class="row mb-15">
-                                <div class="col-4 mt-5 ml-auto pr-0 text-right">
-                                    <label for="exampleForm2" class="form__label mb-0">Вопрос про то это и вот то и потом так вот?</label>
-                                </div>
-                                <div class="col-8">
-                                    <textarea id="exampleForm2" class="form__input form__textarea"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4 my-auto ml-auto pr-0 text-right">
-                                    <label for="exampleForm2" class="form__label mb-0">Вопрос про то и это?</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" id="exampleForm2" class="form__input">
-                                </div>
+                            <div class="profile__field">
+                                <label for="profile-insta" class="form__label profile__label">Instagram</label>
+                                <input type="text" name="insta" id="profile-insta" class="form__input profile__input">
                             </div>
                         </div>
-                    
+
+                        <div class="page-heading profile__heading">
+                            <h1 class="page-heading__title">Анкета пользователя</h1>
+                            <p class="page-heading__description">Укажите информацию о себе. Мы сможем связаться с Вами разными способами </p>
                         </div>
-                    
-                        <div class="d-flex row justify-content-center align-items-center mt-40">
-                            <div class="col-xl-12">
-                                <button href="#" class="page-button page-button_wide page-button_big form__submit mt-3">Сохранить</button>
+
+                        <div class="profile__grid-wrapper">
+                            <div class="profile__field profile__field_wide">
+                                <label for="profile-que1" class="form__label profile__label">Вопрос про то это и вот то и потом так вот?</label>
+                                <input type="text" name="que1" id="profile-que1" class="form__input profile__input">
+                            </div>
+                            <div class="profile__field profile__field_wide">
+                                <label for="profile-que2" class="form__label profile__label">Вопрос про то и это?</label>
+                                <input type="text" name="que2" id="profile-que2" class="form__input profile__input">
+                            </div>
+                            <div class="profile__field profile__field_wide">
+                                <label for="profile-que3" class="form__label profile__label">Вопрос?</label>
+                                <input type="text" name="que3" id="profile-que3" class="form__input profile__input">
+                            </div>
+                            <div class="profile__field profile__field_wide profile__field_textarea">
+                                <label for="profile-que4" class="form__label profile__label">Вопрос про то это и вот то и потом так вот?</label>
+                                <textarea name="que4" id="profile-que4" class="form__input form__textarea profile__input"></textarea>
+                            </div>
+                            <div class="profile__field profile__field_wide">
+                                <label for="profile-que5" class="form__label profile__label">Вопрос про то и это?</label>
+                                <input type="text" name="que5" id="profile-que5" class="form__input profile__input">
                             </div>
                         </div>
+
+                        <button type="submit" class="form__submit page-button page-button_wide page-button_big profile__submit">Сохранить</button>
                     </form>
                 </div>
 

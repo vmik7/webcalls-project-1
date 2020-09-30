@@ -3,6 +3,9 @@
 
 .page-heading {
       margin-bottom: 30px;
+      @media screen and (max-width: $md4 + px) {
+            margin-bottom: 25px;
+      }
 
       &__title {
             font-family: Roboto, sans-serif;

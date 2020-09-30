@@ -1,0 +1,122 @@
+@import '../mixins';
+@import '../variables';
+
+.profile {
+    
+
+    &__heading {
+
+        &:not(:first-child) {
+            margin-top: 80px;
+            @media screen and (max-width: $md3 + px) {
+                margin-top: 60px;
+            }
+            @media screen and (max-width: $md4 + px) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &__grid-wrapper {
+        display: grid;
+        align-items: center;
+        column-gap: 136px;
+        row-gap: 13px;
+
+        margin: 55px 0px 40px 0px;
+
+        @media screen and (min-width: $md3 + 1 + px) {
+            grid-template-columns: 180px 1fr 1fr;
+            grid-auto-flow: column;
+        }
+        @media screen and (max-width: $md3 + px) {
+            grid-template-columns: 1fr;
+            margin: 40px 0px 30px 0px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            row-gap: 10px;
+            margin: 25px 0px 20px 0px;
+        }
+    }
+
+    &__avatar {
+        text-align: center;
+        grid-row: span 4;
+    }
+
+    &__avatar-img {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $md4 + px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: underline;
+        color: #6788FF;
+    }
+
+    &__field {
+        position: relative;
+
+        @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+            grid-column: 2 / 4;
+        }
+
+        &_wide {
+            @media screen and (min-width: $md3 + 1 + px) {
+                grid-column: 2 / 4;
+            }
+        }
+
+        &_textarea {
+        }
+    }
+
+    &__label {
+        margin: 0;
+
+        @media screen and (min-width: $md3 + 1 + px) {
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            padding-right: 20px;
+            text-align: right;
+        }
+        @media screen and (max-width: $md3 + px) {
+            margin-bottom: 8px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+    }
+
+    &__field_wide &__label {
+        @media screen and (min-width: $md3 + 1 + px) {
+            width: 310px;
+        }
+    }
+
+    &__field_textarea &__label {
+        @media screen and (min-width: $md3 + 1 + px) {
+            top: 12px;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    &__input {
+    }
+
+    &__submit {
+        @media screen and (max-width: $md4 + px) {
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+}
