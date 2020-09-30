@@ -1,5 +1,13 @@
 .tarif {
   padding: 40px 30px 27px 30px;
+  max-width: 333px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tarif__title {
@@ -10,6 +18,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #6821FF;
+  margin: 0;
 }
 
 .tarif__sub-title {
@@ -19,10 +28,20 @@
   line-height: 19px;
   text-align: center;
   color: #BCBCBC;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 30px 0px 25px 0px;
 }
 
 .tarif__separator {
+  width: 100%;
   max-width: 248px;
   height: 3px;
   background: #F8F8F8;
@@ -31,6 +50,7 @@
 
 .tarif__list {
   list-style: none;
+  margin: 34px 0px 24px 0px;
 }
 
 .tarif__option {
@@ -63,4 +83,96 @@
 
 .tarif__option_no::after {
   content: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.50328 6.39385L12.4591 2.43806C12.8962 2.00098 12.8962 1.29237 12.4591 0.855983L11.9317 0.328625C11.4945 -0.108586 10.7859 -0.108586 10.3495 0.328625L6.39385 4.28429L2.43806 0.327806C2.00098 -0.109269 1.29237 -0.109269 0.855983 0.327806L0.327806 0.855163C-0.109269 1.29237 -0.109269 2.00098 0.327806 2.43737L4.28429 6.39385L0.328625 10.3495C-0.108586 10.7867 -0.108586 11.4953 0.328625 11.9317L0.855983 12.4591C1.29306 12.8962 2.00166 12.8962 2.43806 12.4591L6.39385 8.50328L10.3495 12.4591C10.7867 12.8962 11.4953 12.8962 11.9317 12.4591L12.4591 11.9317C12.8962 11.4945 12.8962 10.7859 12.4591 10.3495L8.50328 6.39385Z' fill='%23ED1C24'/%3E%3C/svg%3E%0A");
+}
+
+.tarif__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tarif__label {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #93979E;
+  margin-bottom: 6px;
+}
+
+.tarif__select {
+  margin-right: 20px;
+}
+
+.tarif__price {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: right;
+}
+
+.tarif__price-old {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: line-through;
+  color: #ED1C24;
+}
+
+.tarif__price-new {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1DC9B7;
+}
+
+.tarif__button {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 479px) {
+  .tarif {
+    max-width: 100%;
+    padding: 30px 20px 18px 20px;
+  }
+
+  .tarif__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tarif__sub-title {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 15px 0px 13px 0px;
+  }
+
+  .tarif__separator {
+    height: 2px;
+  }
+
+  .tarif__list {
+    margin: 25px 0px 20px 0px;
+  }
+
+  .tarif__option {
+    font-size: 13px;
+  }
+
+  .tarif__price-old {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .tarif__price-new {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }

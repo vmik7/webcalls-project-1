@@ -3,6 +3,15 @@
 
 .tarif {
     padding: 40px 30px 27px 30px;
+    max-width: 333px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $md4 + px) {
+        max-width: 100%;
+        padding: 30px 20px 18px 20px;
+    }
 
     &__title {
         font-family: Montserrat, sans-serif;
@@ -12,6 +21,13 @@
         text-transform: uppercase;
         text-align: center;
         color: #6821FF;
+
+        margin: 0;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__sub-title {
@@ -22,18 +38,38 @@
         text-align: center;
         color: #BCBCBC;
 
+        flex: 1;
+        display: flex;
+        align-items: center;
+
         margin: 30px 0px 25px 0px;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 13px;
+            line-height: 16px;
+            margin: 15px 0px 13px 0px;
+        }
     }
 
     &__separator {
+        width: 100%;
         max-width: 248px;
         height: 3px;
         background: #F8F8F8;
         margin: 0 auto;
+
+        @media screen and (max-width: $md4 + px) {
+            height: 2px;
+        }
     }
 
     &__list {
         list-style: none;
+        margin: 34px 0px 24px 0px;
+
+        @media screen and (max-width: $md4 + px) {
+            margin: 25px 0px 20px 0px;
+        }
     }
 
     &__option {
@@ -44,6 +80,10 @@
         font-size: 14px;
         line-height: 16px;
         color: #404040;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 13px;
+        }
 
         &:not(:last-child) {
             margin-bottom: 9px;
@@ -76,20 +116,61 @@
     }
 
     &__form-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #93979E;
+
+        margin-bottom: 6px;
     }
 
     &__select {
+        margin-right: 20px;
     }
 
     &__select-option {
     }
 
     &__price {
+        flex-shrink: 0;
+        text-align: right;
     }
 
     &__price-old {
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: line-through;
+        color: #ED1C24;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__price-new {
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 30px;
+        color: #1DC9B7;
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    &__button {
+        margin-top: 15px;
     }
 }

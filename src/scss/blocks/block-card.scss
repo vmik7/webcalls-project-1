@@ -3,15 +3,10 @@
 
 .block-card {
     position: relative;
-    width: 100%;
     max-width: 290px;
     display: flex;
     flex-direction: column;
     border: 1px solid #e6ecf0;
-
-    @media screen and (max-width: 750px) {
-        margin: 0 auto;
-    }
 
     @media screen and (min-width: $md3 + 1 + px) {
         transition: all 0.3s ease;

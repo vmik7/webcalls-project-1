@@ -586,16 +586,19 @@ textarea {
 }
 
 .cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 290px);
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-  row-gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -20px;
 }
 
-.cards-wrapper_tarifs {
-  grid-template-columns: repeat(auto-fill, 333px);
+.cards-wrapper > * {
+  margin: 20px;
 }
 
 .check {
@@ -656,25 +659,10 @@ textarea {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .cards-wrapper {
-    -webkit-column-gap: 25px;
-       -moz-column-gap: 25px;
-            column-gap: 25px;
-    row-gap: 25px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   ._container {
     max-width: none;
     padding: 0 10px;
-  }
-
-  .cards-wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

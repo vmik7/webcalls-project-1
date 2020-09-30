@@ -1,6 +1,5 @@
 .block-card {
   position: relative;
-  width: 100%;
   max-width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,12 +169,6 @@
         -ms-transform: scale(1.3);
             transform: scale(1.3);
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .block-card {
-    margin: 0 auto;
   }
 }
 
