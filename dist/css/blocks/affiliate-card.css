@@ -1,0 +1,53 @@
+.affiliate-card {
+  padding: 40px;
+  max-width: 674px;
+}
+
+.affiliate-card__list {
+  margin: 0;
+}
+
+.affiliate-card__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.affiliate-card__list-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.affiliate-card__item-description {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #93979E;
+  margin: 0;
+}
+
+.affiliate-card__item-value {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #22212C;
+  margin: 0;
+}
+
+.affiliate-card__link {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6788FF;
+}
+
+@media screen and (max-width: 479px) {
+  .affiliate-card {
+    padding: 20px;
+  }
+}

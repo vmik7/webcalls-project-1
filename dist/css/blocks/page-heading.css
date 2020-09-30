@@ -1,5 +1,5 @@
 .page-heading {
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .page-heading__title {
@@ -16,20 +16,10 @@
   font-size: 14px;
   line-height: 18px;
   color: #BCBCBC;
-  margin: 16px 0 0 0;
-}
-
-@media screen and (max-width: 767px) {
-  .page-heading {
-    margin-bottom: 40px;
-  }
+  margin: 16px 0 10px 0;
 }
 
 @media screen and (max-width: 479px) {
-  .page-heading {
-    margin-bottom: 30px;
-  }
-
   .page-heading__title {
     font-size: 16px;
     line-height: 18px;

@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-    
+
     <!-- General styles of content -->
     <link rel="stylesheet" href="css/page-style.css">
     <!-- End: General styles of content -->
@@ -50,6 +50,8 @@
     <!-- Material Design Bootstrap -->
     <!-- <link rel="stylesheet" href="assets/css/mdb.min.css"> -->
     <!-- Your custom styles (optional) -->
+
+    <link rel="stylesheet" href="css/blocks/affiliate-card.css">
 
 </head>
 
@@ -1197,7 +1199,7 @@
                                 <a class="" href="/my_referals.html">Мои рефералы</a>
                             </li>
                             <li class="nav-item">
-                                <a class="" href="/payment_history.html">История платежей</a>
+                                <a class="" href="/payment_history.html">История</a>
                             </li>
                         </ul>
                     </div>
@@ -1222,35 +1224,28 @@
                         </div>
                         <!-- end form-title -->
                     </div>
-                  
-                    <div class="row d-flex justify-content-start align-items-left">
-                      <div class="col-xl-9 mb-40">
-                        <div class="card card_eating card_affiliate radius-block">
-                          <div class="row mx-0 ">
-                            <div class="col-12 pr-0 pl-0 card_eating_body ">
-                              <div class="card_eating_items d-flex justify-content-between align-items-center content-item-14">
-                                <p class="card_eating_item_description">Ваш спонсор</p>
-                                <p class=""> usermall@gmail.com</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Ваша реф. ссылка</p>
-                                <p class=""><a href="#" id="upload_link">hhhp://</a></p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Процент вознаграждения</p>
-                                <p class=""> 50%</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Как зарабатывать</p>
-                                <p class=""><a href="#" id="upload_link">читайте тут</a> </p>
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+
+                    <div class="radius-block affiliate-card mb-40">
+                        <ul class="affiliate-card__list">
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Ваш спонсор</p>
+                                <p class="affiliate-card__item-value"><a href="mailto:usermall@gmail.com" class="affiliate-card__link">usermall@gmail.com</a></p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Ваша реф. ссылка</p>
+                                <p class="affiliate-card__item-value"><a href="#" class="affiliate-card__link">hhhp://</a></p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Процент вознаграждения</p>
+                                <p class="affiliate-card__item-value">50%</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Как зарабатывать</p>
+                                <p class="affiliate-card__item-value"><a href="#" class="affiliate-card__link">читайте тут</a></p>
+                            </li>
+                        </ul>
                     </div>
-                  
+
                     <div class="row d-flex justify-content-start align-items-left">
                         <!-- form-title -->
                         <div class="col-xl-8 page-heading">
@@ -1258,50 +1253,47 @@
                         </div>
                         <!-- end form-title -->
                     </div>
-                  
-                    <div class="row d-flex justify-content-start align-items-left">
-                      <div class="col-xl-9 mb-40">
-                        <div class="card card_eating card_affiliate radius-block">
-                          <div class="row mx-0 ">
-                            <div class="col-12 pr-0 pl-0 card_eating_body ">
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Регистраций в 1-ой линии</p>
-                                <p class="">40</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Регистраций во 2-ой линии</p>
-                                <p class="">544</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description"> Активных в 1-ой линии</p>
-                                <p class="">6</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Активных во 2-ой линии</p>
-                                <p class="">53</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Заработано</p>
-                                <p class="">21 984.75 руб.</p>
-                              </div>
-                              <div class="card_eating_items d-flex justify-content-between content-item-14">
-                                <p class="card_eating_item_description">Баланс</p>
-                                <p class="">2023.25 руб.</p>
-                              </div>
-                              <div class="d-block d-xl-flex justify-content-between mt-25">
-                                <div class="col-12 col-xl-6 px-0">
-                                  <button class="page-button page-button_wide text-center mx-0 waves-effect waves-light"> Вывести средства</button>
-                                </div>
-                                <div class="col-12 col-xl-6 text-xl-right text-center px-0 my-auto pt-15 pt-xl-0">
-                                  <p class="my-auto">
-                                    <a href="#" id="upload_link">История транзакций</a> 
-                                  </p>
-                                </div>
-                              </div>
+
+                    <div class="radius-block affiliate-card mb-40">
+                        <ul class="affiliate-card__list">
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Регистраций в 1-ой линии</p>
+                                <p class="affiliate-card__item-value">40</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Регистраций во 2-ой линии</p>
+                                <p class="affiliate-card__item-value">544</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Активных в 1-ой линии</p>
+                                <p class="affiliate-card__item-value">6</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Активных во 2-ой линии</p>
+                                <p class="affiliate-card__item-value">53</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Заработано</p>
+                                <p class="affiliate-card__item-value">21 984.75 руб.</p>
+                            </li>
+                            <li class="affiliate-card__list-item">
+                                <p class="affiliate-card__item-description">Баланс</p>
+                                <p class="affiliate-card__item-value">2023.25 руб.</p>
+                            </li>
+                        </ul>
+                        <div class="d-block d-xl-flex justify-content-between mt-25">
+                            <div class="col-12 col-xl-6 px-0">
+                                <button
+                                    class="page-button page-button_wide text-center mx-0 waves-effect waves-light">
+                                    Вывести средства</button>
                             </div>
-                          </div>
+                            <div
+                                class="col-12 col-xl-6 text-xl-right text-center px-0 my-auto pt-15 pt-xl-0">
+                                <p class="my-auto">
+                                    <a href="#" id="upload_link">История транзакций</a>
+                                </p>
+                            </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>

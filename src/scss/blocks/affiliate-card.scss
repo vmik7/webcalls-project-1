@@ -1,0 +1,50 @@
+@import '../mixins';
+@import '../variables';
+
+.affiliate-card {
+    padding: 40px;
+    max-width: 674px;
+
+    @media screen and (max-width: $md4 + px) {
+        padding: 20px;
+    }
+
+    &__list {
+        margin: 0;
+    }
+
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+
+    &__item-description {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        color: #93979E;
+        margin: 0;
+    }
+
+    &__item-value {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        color: #22212C;
+        margin: 0;
+    }
+
+    &__link {
+        font-family: Roboto, sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6788FF;
+    }
+}

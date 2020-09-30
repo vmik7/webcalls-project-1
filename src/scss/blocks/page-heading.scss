@@ -2,15 +2,7 @@
 @import '../variables';
 
 .page-heading {
-      margin-bottom: 55px;
-
-      @media screen and (max-width: $md3 + px) {
-            margin-bottom: 40px;
-      }
-      @media screen and (max-width: $md4 + px) {
-            margin-bottom: 30px;
-      }
-
+      margin-bottom: 30px;
 
       &__title {
             font-family: Roboto, sans-serif;
@@ -31,7 +23,7 @@
             font-size: 14px;
             line-height: 18px;
             color: #BCBCBC;
-            margin: 16px 0 0 0;
+            margin: 16px 0 10px 0;
 
             @media screen and (max-width: $md4 + px) {
                   font-size: 12px;
