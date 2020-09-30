@@ -1,5 +1,9 @@
 .content-max-width {
-  max-width: 980px;
+  max-width: calc(290px * 3 + 40px * 2 + 15px * 2);
+}
+
+.content-max-width_wide {
+  max-width: calc(333px * 3 + 40px * 2 + 15px * 2);
 }
 
 @media screen and (min-width: 768px) {

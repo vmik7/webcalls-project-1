@@ -1,13 +1,14 @@
 .cards-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
   row-gap: 40px;
+}
+
+.cards-wrapper_tarifs {
+  grid-template-columns: repeat(auto-fill, 333px);
 }
 
 @media screen and (max-width: 900px) {

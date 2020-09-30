@@ -2,7 +2,11 @@
 @import '../variables';
 
 .content-max-width {
-    max-width: 980px;
+    max-width: calc(290px * 3 + 40px * 2 + 15px * 2);
+
+    &_wide {
+        max-width: calc(333px * 3 + 40px * 2 + 15px * 2);
+    }
 
     @media screen and (min-width: $md3 + 1 + px) {
         padding: 15px;

@@ -2,8 +2,12 @@
 @import '../variables';
 
 .cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 290px);
+
+    &_tarifs {
+        grid-template-columns: repeat(auto-fill, 333px);
+    }
 
     column-gap: 40px;
     row-gap: 40px;

@@ -1,0 +1,95 @@
+@import '../mixins';
+@import '../variables';
+
+.tarif {
+    padding: 40px 30px 27px 30px;
+
+    &__title {
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #6821FF;
+    }
+
+    &__sub-title {
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #BCBCBC;
+
+        margin: 30px 0px 25px 0px;
+    }
+
+    &__separator {
+        max-width: 248px;
+        height: 3px;
+        background: #F8F8F8;
+        margin: 0 auto;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__option {
+        position: relative;
+
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #404040;
+
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            width: 18px;
+            text-align: center;
+        }
+
+        &_yes {
+            &::after {
+                content: url("data:image/svg+xml,%3Csvg width='18' height='15' viewBox='0 0 18 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 2L6.375 13L2 8' stroke='%23D7EA53' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        &_no {
+            &::after {
+                content: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.50328 6.39385L12.4591 2.43806C12.8962 2.00098 12.8962 1.29237 12.4591 0.855983L11.9317 0.328625C11.4945 -0.108586 10.7859 -0.108586 10.3495 0.328625L6.39385 4.28429L2.43806 0.327806C2.00098 -0.109269 1.29237 -0.109269 0.855983 0.327806L0.327806 0.855163C-0.109269 1.29237 -0.109269 2.00098 0.327806 2.43737L4.28429 6.39385L0.328625 10.3495C-0.108586 10.7867 -0.108586 11.4953 0.328625 11.9317L0.855983 12.4591C1.29306 12.8962 2.00166 12.8962 2.43806 12.4591L6.39385 8.50328L10.3495 12.4591C10.7867 12.8962 11.4953 12.8962 11.9317 12.4591L12.4591 11.9317C12.8962 11.4945 12.8962 10.7859 12.4591 10.3495L8.50328 6.39385Z' fill='%23ED1C24'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+
+    &__form {
+    }
+
+    &__form-wrapper {
+    }
+
+    &__select {
+    }
+
+    &__select-option {
+    }
+
+    &__price {
+    }
+
+    &__price-old {
+    }
+
+    &__price-new {
+    }
+}
