@@ -26,10 +26,15 @@
 }
 
 .rui-page .page-title h1 {
-  font-size: 20px;
-  line-height: 24px;
+  /* font-size: 20px; */
+  /* line-height: 24px; */
   /* font-weight: 700; */
 
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #22212C;
 }
 
 .rui-page .page-title nav+h1 {
