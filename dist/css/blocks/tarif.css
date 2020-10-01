@@ -228,6 +228,7 @@
 
 @media screen and (max-width: 479px) {
   .tarif {
+    max-width: 290px;
     padding: 30px 20px 18px 20px;
   }
 
