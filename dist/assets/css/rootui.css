@@ -5319,8 +5319,8 @@ h6,
 }
 
 .rui-section-lines.yay-hide .yaybar.rui-yaybar.yay-overlay {
-    -webkit-box-shadow: 5px 0 0 #fff, -5px 0 0 #fff, 6px 0 0 #e6ecf0;
-    box-shadow: 5px 0 0 #fff, -5px 0 0 #fff, 6px 0 0 #e6ecf0;
+    -webkit-box-shadow: 1px 0 0 #e6ecf0;
+    box-shadow: 1px 0 0 #e6ecf0;
 }
 
 .rui-section-lines .rui-yaybar {
@@ -13092,7 +13092,7 @@ textarea.form-control {
     }
 
     .yaybar.rui-yaybar.yay-hide-to-small.yay-overlay~.content-wrap {
-        margin-left: 70px;
+        margin-left: 61px;
     }
 }
 

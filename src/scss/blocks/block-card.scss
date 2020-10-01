@@ -95,6 +95,7 @@
     }
 
     &__item-icon {
+        display: flex;
         img {
             @media screen and (max-width: $md4 + px) {
                 width: 16px;
@@ -106,12 +107,13 @@
         margin: 0 0 0 17px;
         font-family: Roboto, sans-serif;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 13px;
         color: #7E7E7E;
 
         @media screen and (max-width: $md4 + px) {
             margin-left: 13px;
             font-size: 12px;
+            line-height: 12px;
         }
     }
 

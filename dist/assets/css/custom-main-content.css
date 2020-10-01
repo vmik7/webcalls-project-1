@@ -4,14 +4,13 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   position: fixed;
   z-index: 5;
-  /* width: 100%; */
   top: 0;
-
   right: 0;
+  min-height: 75px;
 }
 
 .rui-navbar-show .rui-page .rui-page-title {
-  top: 69px;
+  top: 71px;
 }
 
 .rui-page .page-title {
@@ -21,8 +20,6 @@
   padding: 0 20px;
   padding-top: 0;
   border-bottom: 1px solid #e6ecf0;
-
-
 }
 
 .rui-page .page-title h1 {
@@ -31,7 +28,7 @@
   /* font-weight: 700; */
 
   font-family: Roboto, sans-serif;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #22212C;
@@ -77,8 +74,8 @@
 
 @media (min-width: 575.98px) and (max-width: 1200px) {
   .rui-page .rui-page-title {
-    width: calc(100% - 66px);
-    left: 66px;
+    width: calc(100% - 61px);
+    left: 61px;
   }
 }
 

@@ -1,0 +1,40 @@
+.tarifs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'tarif-1 tarif-2 tarif-3';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px;
+}
+
+.tarifs-wrapper > *:nth-child(1) {
+  grid-area: tarif-1;
+}
+
+.tarifs-wrapper > *:nth-child(2) {
+  grid-area: tarif-2;
+}
+
+.tarifs-wrapper > *:nth-child(3) {
+  grid-area: tarif-3;
+}
+
+@media screen and (max-width: 1290px) {
+  .tarifs-wrapper {
+    grid-template-columns: repeat(2, minmax(290px, -webkit-max-content));
+    grid-template-columns: repeat(2, minmax(290px, max-content));
+    grid-template-areas: 'tarif-1 tarif-2' 'tarif-3 tarif-3';
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tarifs-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 'tarif-1' 'tarif-2' 'tarif-3';
+  }
+}

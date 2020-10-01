@@ -4,6 +4,7 @@
 .ident-note {
     display: grid;
     grid-template-columns: 76px 1fr 40%;
+    align-items: center;
     column-gap: 30px;
 
     @media screen and (max-width: 900px) {

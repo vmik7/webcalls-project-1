@@ -13,7 +13,7 @@
 .tarif__title {
   font-family: Montserrat, sans-serif;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   text-transform: uppercase;
   text-align: center;
@@ -37,7 +37,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0px 25px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 .tarif__separator {
@@ -50,7 +50,7 @@
 
 .tarif__list {
   list-style: none;
-  margin: 34px 0px 24px 0px;
+  margin: 25px 0px 25px 0px;
 }
 
 .tarif__option {
@@ -139,7 +139,6 @@
 
 @media screen and (max-width: 479px) {
   .tarif {
-    max-width: 100%;
     padding: 30px 20px 18px 20px;
   }
 

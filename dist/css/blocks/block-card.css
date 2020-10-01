@@ -84,11 +84,17 @@
   margin-bottom: 7px;
 }
 
+.block-card__item-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .block-card__item-text {
   margin: 0 0 0 17px;
   font-family: Roboto, sans-serif;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 13px;
   color: #7E7E7E;
 }
 
@@ -189,6 +195,7 @@
   .block-card__item-text {
     margin-left: 13px;
     font-size: 12px;
+    line-height: 12px;
   }
 
   .block-card__item-value {

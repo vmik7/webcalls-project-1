@@ -50,8 +50,12 @@
         font-family: Roboto, sans-serif;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 18px;
         color: var(--header-color, #8F8F8F);
+
+        @media screen and (max-width: $md4 + px) {
+            font-size: 13px;
+        }
     }
 
     &__text {
