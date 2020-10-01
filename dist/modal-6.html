@@ -1566,7 +1566,7 @@
 
 
 <!-- Modal window -->
-<div class="popup popup_payment">
+<div class="popup popup_payment" id="popup-payment">
     <div class="radius-block popup__window">
         <button class="popup__cross">
             <img src="img/cross.svg" alt="Закрыть">
@@ -1580,12 +1580,30 @@
                 <input type="text" name="sum" id="popup-sum" class="form__input popup__form-input" placeholder="Минимальная сумма вывода 2000 руб.">
     
                 <label for="popup-way" class="popup__form-label">Способ выплаты</label>
-                <select name="way" class="form__input form__select popup__form-input popup__form-select" required>
+
+                <div class="dropdown popup__dropdown">
+                    <button class="dropdown-toggle form__input popup__dropdown-button" type="button" id="dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Выберете
+                    </button>
+                    <div class="dropdown-menu popup__dropdown-menu" aria-labelledby="dropdown-menu">
+                        <button class="dropdown-item popup__dropdown-item" type="button">
+                            На карту
+                        </button>
+                        <button class="dropdown-item popup__dropdown-item" type="button">
+                            Яндекс.Деньги
+                        </button>
+                        <button class="dropdown-item popup__dropdown-item" type="button">
+                            KIWI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <select name="way" class="form__input form__select popup__form-input popup__form-select" required>
                     <option class="form__option popup__form-option" disabled selected hidden value="">Куда отправить средства</option>
                     <option class="form__option popup__form-option" value="1">На карту</option>
                     <option class="form__option popup__form-option" value="2">Яндекс.Деньги</option>
                     <option class="form__option popup__form-option" value="3">KIWI</option>
-                </select>
+                </select> -->
     
                 <label for="popup-data" class="popup__form-label">Платежные данные</label>
                 <input type="text" name="data" id="popup-data" class="form__input popup__form-input" placeholder="Укажите платежные данные">
