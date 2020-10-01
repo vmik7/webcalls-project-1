@@ -21,6 +21,16 @@
   position: relative;
   width: 610px;
   max-width: 90%;
+  min-height: 420px;
+  max-height: 90%;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 50px 80px 55px 80px;
   text-align: center;
 }
@@ -33,6 +43,22 @@
   margin: 0;
   border: 0;
   background: none;
+}
+
+.popup__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup__img + .popup__title {
@@ -64,6 +90,7 @@
 .popup_payment .popup__window {
   padding: 40px 70px 45px 70px;
   width: 460px;
+  min-height: 570px;
 }
 
 .popup_payment .popup__img + .popup__title {
@@ -77,7 +104,7 @@
 }
 
 .popup__form {
-  margin-top: 45px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -103,14 +130,65 @@
   margin: 25px 0 0 0;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .popup__window {
-    padding: 20px 15px 30px 15px;
+    padding: 30px 40px 40px 40px;
+    min-height: 375px;
+    width: 520px;
+  }
+
+  .popup__img img {
+    height: 120px;
+  }
+
+  .popup__img_smaller img {
+    height: 90px;
+  }
+
+  .popup__title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .popup__text {
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 30px;
+  }
+
+  .popup_payment .popup__window {
+    padding: 30px 40px 40px 40px;
+    min-height: 510px;
+    width: 380px;
+  }
+
+  .popup_payment .popup__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .popup__form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .popup__form-label {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 14px 0 8px 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .popup__window {
+    padding: 20px 20px 20px 20px;
+    min-height: 360px;
   }
 
   .popup__cross {
-    top: 15px;
-    right: 12px;
+    top: 20px;
+    right: 20px;
   }
 
   .popup__cross img {
@@ -144,7 +222,9 @@
   }
 
   .popup_payment .popup__window {
-    padding: 20px 15px 30px 15px;
+    padding: 25px 20px 20px 20px;
+    width: 335px;
+    min-height: 410px;
   }
 
   .popup_payment .popup__img + .popup__title {
@@ -157,8 +237,8 @@
   }
 
   .popup__form {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
 
   .popup__form-label {
@@ -168,7 +248,8 @@
   }
 
   .popup__note {
-    font-size: 10px;
-    margin-top: 20px;
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 15px;
   }
 }

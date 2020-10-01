@@ -1,8 +1,6 @@
 @import '../mixins';
 @import '../variables';
 
-$popup-mobile: 450;
-
 .popup {
     position: fixed;
     top: 0;
@@ -18,13 +16,28 @@ $popup-mobile: 450;
 
     &__window {
         position: relative;
+
         width: 610px;
         max-width: 90%;
+
+        min-height: 420px;
+        max-height: 90%;
+        overflow: auto;
+
+        display: flex;
+        flex-direction: column;
+
         padding: 50px 80px 55px 80px;
         text-align: center;
 
-        @media screen and (max-width: $popup-mobile + px) {
-            padding: 20px 15px 30px 15px;
+        @media screen and (max-width: $md3 + px) {
+            padding: 30px 40px 40px 40px;
+            min-height: 375px;
+            width: 520px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            padding: 20px 20px 20px 20px;
+            min-height: 360px;
         }
     }
 
@@ -38,30 +51,42 @@ $popup-mobile: 450;
         border: 0;
         background: none;
 
-        @media screen and (max-width: $popup-mobile + px) {
-            top: 15px;
-            right: 12px;
+
+        @media screen and (max-width: $md4 + px) {
+            top: 20px;
+            right: 20px;
         }
 
         img {
-            @media screen and (max-width: $popup-mobile + px) {
+            @media screen and (max-width: $md4 + px) {
                 width: 15px;
             }
         }
     }
 
-    &__img {
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    &__img {
         img {
-            @media screen and (max-width: $popup-mobile + px) {
+            @media screen and (max-width: $md3 + px) {
+                height: 120px;
+            }
+            @media screen and (max-width: $md4 + px) {
                 height: 90px;
             }
         }
 
         &_smaller {
-
             img {
-                @media screen and (max-width: $popup-mobile + px) {
+                @media screen and (max-width: $md3 + px) {
+                    height: 90px;
+                }
+                @media screen and (max-width: $md4 + px) {
                     height: 70px;
                 }
             }
@@ -81,7 +106,11 @@ $popup-mobile: 450;
 
         margin-bottom: 8px;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md3 + px) {
+            font-size: 15px;
+            line-height: 19px;
+        }
+        @media screen and (max-width: $md4 + px) {
             font-size: 14px;
             line-height: 18px;
         }
@@ -96,7 +125,13 @@ $popup-mobile: 450;
 
         margin: 0 0 40px 0;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md3 + px) {
+            font-size: 13px;
+            line-height: 17px;
+
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: $md4 + px) {
             font-size: 12px;
             line-height: 16px;
 
@@ -104,10 +139,13 @@ $popup-mobile: 450;
         }
     }
 
+    &__bottom {
+    }
+
     &__button {
         min-width: 197px;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md4 + px) {
             height: 35px;
             line-height: 35px;
             font-size: 12px;
@@ -118,16 +156,24 @@ $popup-mobile: 450;
     &_payment &__window {
         padding: 40px 70px 45px 70px;
         width: 460px;
+        min-height: 570px;
 
-        @media screen and (max-width: $popup-mobile + px) {
-            padding: 20px 15px 30px 15px;
+        @media screen and (max-width: $md3 + px) {
+            padding: 30px 40px 40px 40px;
+            min-height: 510px;
+            width: 380px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            padding: 25px 20px 20px 20px;
+            width: 335px;
+            min-height: 410px;
         }
     }
 
     &_payment &__img + &__title {
         margin-top: 30px;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md4 + px) {
             margin-top: 20px;
         }
     }
@@ -135,22 +181,30 @@ $popup-mobile: 450;
     &_payment &__title {
         font-size: 20px;
         line-height: 24px;
-
         margin-bottom: 17px;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md3 + px) {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: $md4 + px) {
             font-size: 14px;
             line-height: 18px;
         }
     }
 
     &__form {
-        margin-top: 45px;
+        margin-top: 20px;
         margin-bottom: 30px;
 
-        @media screen and (max-width: $popup-mobile + px) {
-            margin-top: 30px;
-            margin-bottom: 20px;
+        @media screen and (max-width: $md3 + px) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: $md4 + px) {
+            margin-top: 0px;
+            margin-bottom: 15px;
         }
     }
 
@@ -167,17 +221,21 @@ $popup-mobile: 450;
 
         margin: 14px 0 12px 0;
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md3 + px) {
+            font-size: 13px;
+            line-height: 16px;
+            margin: 14px 0 8px 0;
+        }
+        @media screen and (max-width: $md4 + px) {
             font-size: 12px;
             line-height: 16px;
-
             margin: 12px 0 7px 0;
         }
     }
 
     &__form-input {
 
-        @media screen and (max-width: $popup-mobile + px) {
+        @media screen and (max-width: $md4 + px) {
 
         }
     }
@@ -195,9 +253,10 @@ $popup-mobile: 450;
 
         margin: 25px 0 0 0;
 
-        @media screen and (max-width: $popup-mobile + px) {
-            font-size: 10px;
-            margin-top: 20px;
+        @media screen and (max-width: $md4 + px) {
+            font-size: 8px;
+            line-height: 12px;
+            margin-top: 15px;
         }
     }
 }

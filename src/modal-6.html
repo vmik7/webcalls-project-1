@@ -1530,8 +1530,8 @@
     aria-live="assertive"
     aria-atomic="true"
     data-delay="8000"
-    data-toast-show-on-startup="true"
 >
+    <!-- data-toast-show-on-startup="true" -->
     <div class="toast-header">
         <h5 class="mr-auto mnb-2">Добро пожаловать в WebCalls</h5>
         <small class="toast-date">20 Дек</small>
@@ -1571,30 +1571,32 @@
         <button class="popup__cross">
             <img src="img/cross.svg" alt="Закрыть">
         </button>
-        <div class="popup__title">
-            Вывод средств
+        <div class="popup__content">
+            <div class="popup__title">
+                Вывод средств
+            </div>
+            <form action="#" class="form popup__form">
+                <label for="popup-sum" class="popup__form-label">Укажите сумму</label>
+                <input type="text" name="sum" id="popup-sum" class="form__input popup__form-input" placeholder="Минимальная сумма вывода 2000 руб.">
+    
+                <label for="popup-way" class="popup__form-label">Способ выплаты</label>
+                <select name="way" class="form__input form__select popup__form-input popup__form-select" required>
+                    <option class="form__option popup__form-option" disabled selected hidden value="">Куда отправить средства</option>
+                    <option class="form__option popup__form-option" value="1">На карту</option>
+                    <option class="form__option popup__form-option" value="2">Яндекс.Деньги</option>
+                    <option class="form__option popup__form-option" value="3">KIWI</option>
+                </select>
+    
+                <label for="popup-data" class="popup__form-label">Платежные данные</label>
+                <input type="text" name="data" id="popup-data" class="form__input popup__form-input" placeholder="Укажите платежные данные">
+            </form>    
         </div>
-        <form action="#" class="form popup__form">
-
-            <label for="popup-sum" class="popup__form-label">Укажите сумму</label>
-            <input type="text" name="sum" id="popup-sum" class="form__input popup__form-input" placeholder="Минимальная сумма вывода 2000 руб.">
-
-            <label for="popup-way" class="popup__form-label">Способ выплаты</label>
-            <select name="way" class="form__input form__select popup__form-input popup__form-select" required>
-                <option class="form__option popup__form-option" disabled selected hidden value="">Куда отправить средства</option>
-                <option class="form__option popup__form-option" value="1">На карту</option>
-                <option class="form__option popup__form-option" value="2">Яндекс.Деньги</option>
-                <option class="form__option popup__form-option" value="3">KIWI</option>
-            </select>
-
-            <label for="popup-data" class="popup__form-label">Платежные данные</label>
-            <input type="text" name="data" id="popup-data" class="form__input popup__form-input" placeholder="Укажите платежные данные">
-
-        </form>
-        <button class="page-button page-button_wide form__submit popup__button">Вывести средства</button>
-        <p class="popup__note">
-            Наш сервис не взимает комиссию за вывод. Комиссию взимают платежные системы, интегрированныес ним. Чтобы вывести средства у Вас должно быть минимум 2 активных реферала. Минимальная сумма для вывода 2000 руб. Подробнее про условия вывода <a href="#">читайте тут</a>
-        </p>
+        <div class="popup__bottom">
+            <button class="page-button page-button_wide form__submit popup__button">Вывести средства</button>
+            <p class="popup__note">
+                Наш сервис не взимает комиссию за вывод. Комиссию взимают платежные системы, интегрированныес ним. Чтобы вывести средства у Вас должно быть минимум 2 активных реферала. Минимальная сумма для вывода 2000 руб. Подробнее про условия вывода <a href="#">читайте тут</a>
+            </p>
+        </div>
     </div>
 </div>
 <!-- End: Modal window -->

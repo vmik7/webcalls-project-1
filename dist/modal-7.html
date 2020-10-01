@@ -1530,8 +1530,8 @@
     aria-live="assertive"
     aria-atomic="true"
     data-delay="8000"
-    data-toast-show-on-startup="true"
 >
+<!-- data-toast-show-on-startup="true" -->
     <div class="toast-header">
         <h5 class="mr-auto mnb-2">Добро пожаловать в WebCalls</h5>
         <small class="toast-date">20 Дек</small>
@@ -1571,16 +1571,20 @@
         <button class="popup__cross">
             <img src="img/cross.svg" alt="Закрыть">
         </button>
-        <div class="popup__img popup__img_smaller">
-            <img src="img/modal-ok-icon.svg" alt="Иконка неоплаченного курса">
+        <div class="popup__content">
+            <div class="popup__img popup__img_smaller">
+                <img src="img/modal-ok-icon.svg" alt="Иконка неоплаченного курса">
+            </div>
+            <div class="popup__title">
+                Заявка принята
+            </div>
+            <p class="popup__text">
+                Поздравляем Ваша заявка на вывод средств принята и будет обработана в течение 24 часов. Пожалуйста не пишите в поддержку это не ускорит процесс 
+            </p>
         </div>
-        <div class="popup__title">
-            Заявка принята
+        <div class="popup__bottom">
+            <button class="page-button page-button_wide popup__button">OK</button>
         </div>
-        <p class="popup__text">
-            Поздравляем Ваша заявка на вывод средств принята и будет обработана в течение 24 часов. Пожалуйста не пишите в поддержку это не ускорит процесс 
-        </p>
-        <button class="page-button page-button_wide popup__button">OK</button>
     </div>
 </div>
 <!-- End: Modal window -->

@@ -1530,8 +1530,8 @@
     aria-live="assertive"
     aria-atomic="true"
     data-delay="8000"
-    data-toast-show-on-startup="true"
 >
+    <!-- data-toast-show-on-startup="true" -->
     <div class="toast-header">
         <h5 class="mr-auto mnb-2">Добро пожаловать в WebCalls</h5>
         <small class="toast-date">20 Дек</small>
@@ -1571,16 +1571,20 @@
         <button class="popup__cross">
             <img src="img/cross.svg" alt="Закрыть">
         </button>
-        <div class="popup__img">
-            <img src="img/modal-course-icon.svg" alt="Иконка неоплаченного курса">
+        <div class="popup__content">
+            <div class="popup__img">
+                <img src="img/modal-course-icon.svg" alt="Иконка неоплаченного курса">
+            </div>
+            <div class="popup__title">
+                Курс не оплачен
+            </div>
+            <p class="popup__text">
+                Чтобы получить доступ к курсу, выберите подходящий  формат участия и оплатите на некобходимый вам срок
+            </p>
         </div>
-        <div class="popup__title">
-            Курс не оплачен
+        <div class="popup__bottom">
+            <button class="page-button popup__button">Выбрать формат</button>
         </div>
-        <p class="popup__text">
-            Чтобы получить доступ к курсу, выберите подходящий  формат участия и оплатите на некобходимый вам срок
-        </p>
-        <button class="page-button popup__button">Выбрать формат</button>
     </div>
 </div>
 <!-- End: Modal window -->
