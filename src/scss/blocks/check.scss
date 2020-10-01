@@ -20,15 +20,22 @@
         left: 0;
         top: 50%;
         transform: translate3d(0, -50%, 0);
-        width: 1.43em;
-        height: 1.43em;
-        border-radius: 0.4em;
-        border: 0.15em solid #6A25FF;
+
+        // width: 1.43em;
+        // height: 1.43em;
+        width: 20px;
+        height: 20px;
+
+        // border-radius: 0.4em;
+        border-radius: 5px;
+
+        // border: 0.15em solid #6A25FF;
+        border: 2px solid #6A25FF;
         
         background-color: transparent;
         background-repeat: no-repeat;
-        background-position: 60% 70%;
-        background-size: 90%;
+        background-position: 50% 50%;
+        background-size: 80%;
 
         transition: all 0.3s ease;
 
