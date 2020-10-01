@@ -78,24 +78,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding-left: 32px;
 }
 
 .block-card__list-item:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .block-card__item-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+
+.block-card__item-icon img {
+  height: 18px;
 }
 
 .block-card__item-text {
-  margin: 0 0 0 17px;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 13px;
   color: #7E7E7E;
+  margin: 0;
 }
 
 .block-card__item-value {
@@ -189,11 +203,10 @@
   }
 
   .block-card__item-icon img {
-    width: 16px;
+    height: 17px;
   }
 
   .block-card__item-text {
-    margin-left: 13px;
     font-size: 12px;
     line-height: 12px;
   }

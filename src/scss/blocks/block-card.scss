@@ -89,29 +89,39 @@
         display: flex;
         align-items: center;
 
+        position: relative;
+        padding-left: 32px;
+
         &:not(:last-child) {
-            margin-bottom: 7px;
+            margin-bottom: 8px;
         }
     }
 
     &__item-icon {
         display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+
         img {
+            height: 18px;
             @media screen and (max-width: $md4 + px) {
-                width: 16px;
+                height: 17px;
             }
         }
     }
 
     &__item-text {
-        margin: 0 0 0 17px;
         font-family: Roboto, sans-serif;
         font-size: 13px;
         line-height: 13px;
         color: #7E7E7E;
 
+        margin: 0;
+
         @media screen and (max-width: $md4 + px) {
-            margin-left: 13px;
             font-size: 12px;
             line-height: 12px;
         }
