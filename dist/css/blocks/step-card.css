@@ -59,11 +59,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
-  row-gap: 40px;
-  margin: 40px 0;
+  margin: calc(40px - 20px) -30px;
+}
+
+.step-card__media-wrapper > * {
+  margin: 20px 30px;
 }
 
 .step-card__media {
@@ -146,10 +146,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-  margin-bottom: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -8px -20px calc(35px - 8px) -20px;
+}
+
+.step-card__controls-wrapper > * {
+  margin: 8px 20px;
 }
 
 .step-card__control {
@@ -232,10 +238,11 @@ body {
 
 @media screen and (max-width: 900px) {
   .step-card__media-wrapper {
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    row-gap: 20px;
+    margin: calc(40px - 10px) -15px;
+  }
+
+  .step-card__media-wrapper > * {
+    margin: 10px 15px;
   }
 
   .step-card__media_horizontal {
@@ -273,7 +280,7 @@ body {
   }
 
   .step-card__media-wrapper {
-    margin: 30px 0;
+    margin: calc(30px - 10px) -15px;
   }
 
   .step-card__form {
@@ -345,14 +352,6 @@ body {
     height: 45px;
     font-size: 12px;
     line-height: 17px;
-  }
-
-  .step-card__controls-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 15px;
   }
 
   .step-card__control-text {
