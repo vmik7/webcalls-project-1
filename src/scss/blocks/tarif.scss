@@ -112,6 +112,92 @@
         }
     }
 
+    #tarifs-wrapper &__dropdown {
+        position: relative;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    #tarifs-wrapper &__dropdown-button {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        z-index: 2;
+
+        &::after {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+        }
+    }
+
+    #tarifs-wrapper &__dropdown-menu {
+        width: 100%;
+        margin: 0;
+        z-index: 1;
+
+        background: #fff;
+        border: 1px solid #E7EEF3;
+        box-sizing: border-box;
+    }
+
+    #tarifs-wrapper &__dropdown-menu[x-placement="bottom-start"] {
+        border-radius: 0 0 5px 5px;
+        margin-top: -15px;
+        padding: 30px 25px 15px 20px;
+    }
+    #tarifs-wrapper &__dropdown-menu[x-placement="top-start"] {
+        border-radius: 5px 5px 0 0;
+        margin-bottom: -15px;
+        padding: 15px 25px 30px 20px;
+    }
+
+    #tarifs-wrapper &__dropdown-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        height: 33px;
+
+        &:not(:last-child) {
+            // margin-bottom: 13px;
+        }
+    }
+
+    #tarifs-wrapper &__dropdown-text {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #93979E;
+    }
+
+    #tarifs-wrapper &__dropdown-discond {
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 5px;
+        
+        width: 40px;
+        text-align: center;
+
+        height: 21px;
+        line-height: 21px;
+
+        &_small {
+            background: rgba(237, 28, 36, 0.6);
+        }
+        &_mid {
+            background: rgba(237, 28, 36, 0.8);
+        }
+        &_extra {
+            background: rgba(237, 28, 36, 1);
+        }
+    }
+
     &__form {
     }
 

@@ -85,6 +85,95 @@
   content: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.50328 6.39385L12.4591 2.43806C12.8962 2.00098 12.8962 1.29237 12.4591 0.855983L11.9317 0.328625C11.4945 -0.108586 10.7859 -0.108586 10.3495 0.328625L6.39385 4.28429L2.43806 0.327806C2.00098 -0.109269 1.29237 -0.109269 0.855983 0.327806L0.327806 0.855163C-0.109269 1.29237 -0.109269 2.00098 0.327806 2.43737L4.28429 6.39385L0.328625 10.3495C-0.108586 10.7867 -0.108586 11.4953 0.328625 11.9317L0.855983 12.4591C1.29306 12.8962 2.00166 12.8962 2.43806 12.4591L6.39385 8.50328L10.3495 12.4591C10.7867 12.8962 11.4953 12.8962 11.9317 12.4591L12.4591 11.9317C12.8962 11.4945 12.8962 10.7859 12.4591 10.3495L8.50328 6.39385Z' fill='%23ED1C24'/%3E%3C/svg%3E%0A");
 }
 
+#tarifs-wrapper .tarif__dropdown {
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+}
+
+#tarifs-wrapper .tarif__dropdown-button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  z-index: 2;
+}
+
+#tarifs-wrapper .tarif__dropdown-button::after {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+
+#tarifs-wrapper .tarif__dropdown-menu {
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  background: #fff;
+  border: 1px solid #E7EEF3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#tarifs-wrapper .tarif__dropdown-menu[x-placement="bottom-start"] {
+  border-radius: 0 0 5px 5px;
+  margin-top: -15px;
+  padding: 30px 25px 15px 20px;
+}
+
+#tarifs-wrapper .tarif__dropdown-menu[x-placement="top-start"] {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -15px;
+  padding: 15px 25px 30px 20px;
+}
+
+#tarifs-wrapper .tarif__dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  height: 33px;
+}
+
+#tarifs-wrapper .tarif__dropdown-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #93979E;
+}
+
+#tarifs-wrapper .tarif__dropdown-discond {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
+  height: 21px;
+  line-height: 21px;
+}
+
+#tarifs-wrapper .tarif__dropdown-discond_small {
+  background: rgba(237, 28, 36, 0.6);
+}
+
+#tarifs-wrapper .tarif__dropdown-discond_mid {
+  background: rgba(237, 28, 36, 0.8);
+}
+
+#tarifs-wrapper .tarif__dropdown-discond_extra {
+  background: #ed1c24;
+}
+
 .tarif__form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

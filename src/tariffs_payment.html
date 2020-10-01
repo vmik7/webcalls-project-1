@@ -1243,7 +1243,7 @@
                         <h1 class="page-heading__title">Выберите удобный формат участия</h1>
                     </div>
 
-                    <div class="tarifs-wrapper mt-15 mb-30">
+                    <div class="tarifs-wrapper mt-15 mb-30" id="tarifs-wrapper">
     
                         <div class="radius-block tarif">
                             <h2 class="tarif__title">Базовый</h2>
@@ -1271,18 +1271,53 @@
                             <form action="#" class="form tarif__form">
                                 <label for="tarif-1-period" class="form__label tarif__label">Выберите срок:</label>
                                 <div class="tarif__form-wrapper">
-                                    <select name="period" id="tarif-1-period" class="form__input form__select tarif__select">
+
+                                    <div class="dropdown tarif__dropdown">
+                                        <button class="dropdown-toggle form__input tarif__dropdown-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Выберете
+                                        </button>
+                                        <div class="dropdown-menu tarif__dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">
+                                                    1 месяца
+                                                </div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">2 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_small">-20%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">3 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">4 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">5 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">6 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- <select name="period" id="tarif-1-period" class="form__input form__select tarif__select">
                                         <option value="1" class="form__option tarif__select-option">1 месяц</option>
                                         <option value="2" class="form__option tarif__select-option">2 месяца (-20%)</option>
                                         <option value="3" class="form__option tarif__select-option">3 месяца (-35%)</option>
                                         <option value="4" class="form__option tarif__select-option">4 месяца (-35%)</option>
                                         <option value="5" class="form__option tarif__select-option">5 месяцев (-50%)</option>
                                         <option value="6" class="form__option tarif__select-option">6 месяцев (-50%)</option>
-                                    </select>
-                                    <div class="tarif__price">
+                                    </select> -->
+
+                                    <di class="tarif__price">
                                         <div class="tarif__price-old rub">5 940</div>
                                         <div class="tarif__price-new rub">333</div>
-                                    </div>
+                                    </di>
                                 </div>
                                 <button type="submit" class="page-button page-button_wide tarif__button">Оплатить участие</button>
                             </form>
@@ -1314,14 +1349,49 @@
                             <form action="#" class="form tarif__form">
                                 <label for="tarif-2-period" class="form__label tarif__label">Выберите срок:</label>
                                 <div class="tarif__form-wrapper">
-                                    <select name="period" id="tarif-2-period" class="form__input form__select tarif__select">
+
+                                    <div class="dropdown tarif__dropdown">
+                                        <button class="dropdown-toggle form__input tarif__dropdown-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Выберете
+                                        </button>
+                                        <div class="dropdown-menu tarif__dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">
+                                                    1 месяца
+                                                </div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">2 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_small">-20%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">3 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">4 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">5 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">6 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <select name="period" id="tarif-2-period" class="form__input form__select tarif__select">
                                         <option value="1" class="form__option tarif__select-option">1 месяц</option>
                                         <option value="2" class="form__option tarif__select-option">2 месяца (-20%)</option>
                                         <option value="3" class="form__option tarif__select-option">3 месяца (-35%)</option>
                                         <option value="4" class="form__option tarif__select-option">4 месяца (-35%)</option>
                                         <option value="5" class="form__option tarif__select-option">5 месяцев (-50%)</option>
                                         <option value="6" class="form__option tarif__select-option">6 месяцев (-50%)</option>
-                                    </select>
+                                    </select> -->
+                                    
                                     <div class="tarif__price">
                                         <div class="tarif__price-old rub">5 940</div>
                                         <div class="tarif__price-new rub">777</div>
@@ -1357,14 +1427,49 @@
                             <form action="#" class="form tarif__form">
                                 <label for="tarif-3-period" class="form__label tarif__label">Выберите срок:</label>
                                 <div class="tarif__form-wrapper">
-                                    <select name="period" id="tarif-3-period" class="form__input form__select tarif__select">
+
+                                    <div class="dropdown tarif__dropdown">
+                                        <button class="dropdown-toggle form__input tarif__dropdown-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Выберете
+                                        </button>
+                                        <div class="dropdown-menu tarif__dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">
+                                                    1 месяца
+                                                </div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">2 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_small">-20%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">3 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">4 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_mid">-35%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">5 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                            <button class="dropdown-item tarif__dropdown-item" type="button">
+                                                <div class="tarif__dropdown-text">6 месяца</div>
+                                                <div class="tarif__dropdown-discond tarif__dropdown-discond_extra">-50%</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <select name="period" id="tarif-3-period" class="form__input form__select tarif__select">
                                         <option value="1" class="form__option tarif__select-option">1 месяц</option>
                                         <option value="2" class="form__option tarif__select-option">2 месяца (-20%)</option>
                                         <option value="3" class="form__option tarif__select-option">3 месяца (-35%)</option>
                                         <option value="4" class="form__option tarif__select-option">4 месяца (-35%)</option>
                                         <option value="5" class="form__option tarif__select-option">5 месяцев (-50%)</option>
                                         <option value="6" class="form__option tarif__select-option">6 месяцев (-50%)</option>
-                                    </select>
+                                    </select> -->
+
                                     <div class="tarif__price">
                                         <div class="tarif__price-old rub">5 940</div>
                                         <div class="tarif__price-new rub">1 888</div>
