@@ -31,6 +31,8 @@
         background-size: 90%;
 
         transition: all 0.3s ease;
+
+        cursor: pointer;
     }
 
     &__input:focus + &__box {
