@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
     This file contains general styles, used on many pages, some variables.
     Included blocks: 
@@ -12,59 +14,75 @@
 */
 
 :root {
+
+  /* Основной акцентный цвет */
   --accent-color: #6A25FF;
+
+  /* Основной акцентный цвет, но чуть потемнее */
   --accent-dark-color: #4305C7;
+
+  /* Цвет фона и текста кнопки в обычном состоянии */
   --button-bg: var(--accent-color, #6A25FF);
   --button-color: #fff;
+
+  /* Цвет фона и текста кнопки при наведении */
   --button-hover-bg: var(--accent-dark-color, #4305C7);
   --button-hover-color: #fff;
+
+  /* Радиус закругления у кнопки обычного размера */
   --button-border-radius: 5px;
+
+  /* Основной цвет чекбокса */
   --checkbox-color: var(--accent-color, #6A25FF);
+
+  /* Цвет подписи текстового поля в формах */
   --label-color: #393939;
+
+  /* Параметры цвета и фона текстового поля в формах */
   --input-bg: #FCFCFC;
   --input-border-color: #E7EBF4;
   --input-placeholder-color: rgba(188, 188, 188, 0.8);
   --input-color: #222;
+
+  /* Тень и обводка текстового поля в формах при фокусе */
   --input-focus-border-color: rgba(114, 94, 195, 0.6);
   --input-focus-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+
+  /* Параметры цвета, тени, фона, радиуса закругления на всех карточках и модальных окнах сайта */
   --card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   --card-border-radius: 10px;
   --card-border-color: #e6ecf0;
   --card-bg: #fff;
   --card-title-color: #393939;
+
+  /* Цвета основного заголовка и подзаголовка страницы */
   --page-title-color: #22212C;
   --page-sub-title-color: #BCBCBC;
+
+  /* Цвет паранжи, закрывающей основной контент во время открытия модалки */
   --popup-paranja-bg: rgba(75, 75, 75, 0.5);
+
+  /* Параметры цветов у заголовка и текста в модальных окнах */
   --popup-title-color: #000;
   --popup-label-color: #000;
   --popup-text-color: #B1B1B1;
+
+  /* Параметры цвета и радиуса закругления выпадающего меню (страницы тарифа и одно модальное окно) */
   --dropdown-border-radius: 5px;
   --dropdown-text-color: #93979E;
+
+  /* Цвет старой и новой цены на странице тарифа */
   --tarif-old-price-color: #ED1C24;
   --tarif-new-price-color: #1DC9B7;
+
+  /* Цвет скидок в выпадающем меню на странице тарифа (small - самая маленькая скидка, mid - средняя, extra - самая большая) */
   --tarif-discond-small-color: rgba(237, 28, 36, 0.6);
   --tarif-discond-mid-color: rgba(237, 28, 36, 0.8);
   --tarif-discond-extra-color: rgba(237, 28, 36, 1);
+  
 }
 
-._visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-._no-focus-outline:focus {
-  outline: 0;
-}
-
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: 0;
-}
+/* Класс добавляет значок рубля после элемента */
 
 .rub::after {
   content: "\20BD";
