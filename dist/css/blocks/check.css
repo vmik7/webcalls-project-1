@@ -18,7 +18,7 @@
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  border: 2px solid #6A25FF;
+  border: 2px solid var(--checkbox-color, #6A25FF);
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -30,11 +30,11 @@
 }
 
 .check__input:focus + .check__box {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
-          box-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+  -webkit-box-shadow: var(--input-focus-shadow, 0 0 0 0.2rem rgba(114, 94, 195, 0.2));
+          box-shadow: var(--input-focus-shadow, 0 0 0 0.2rem rgba(114, 94, 195, 0.2));
 }
 
 .check__input:checked + .check__box {
-  background-color: #6A25FF;
+  background-color: var(--checkbox-color, #6A25FF);
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L5.125 10L2 6.36364' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }

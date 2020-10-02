@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #e6ecf0;
+  border: 1px solid var(--card-border-color, #e6ecf0);
 }
 
 .block-card__img {
@@ -43,7 +43,7 @@
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-  color: #393939 !important;
+  color: var(--card-title-color, #393939) !important;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -51,7 +51,7 @@
 
 .block-card__title:hover,
 .block-card__title:focus {
-  color: #6a25ff !important;
+  color: var(--accent-color, #6a25ff) !important;
   cursor: pointer;
 }
 

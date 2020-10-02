@@ -8,7 +8,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        color: #393939;
+        color: var(--label-color, #393939);
     }
 
     &__input {
@@ -17,19 +17,19 @@
         height: 40px;
         padding: 0 12px;
 
-        background: #FCFCFC;
-        border: 1px solid #E7EBF4;
+        background: var(--input-bg, #FCFCFC);
+        border: 1px solid var(--input-border-color, #E7EBF4);
         border-radius: 5px;
 
         font-family: Roboto, sans-serif;
         font-weight: 300;
         font-size: 14px;
         line-height: 16px;
-        color: #222;
+        color: var(--input-color, #222);
         
         &:focus {
-            border-color: rgba(114, 94, 195, 0.6);
-            box-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+            border-color: var(--input-focus-border-color, rgba(114, 94, 195, 0.6));
+            box-shadow: var(--input-focus-shadow, 0 0 0 0.2rem rgba(114, 94, 195, 0.2));
             outline: 0;
         }
 
@@ -42,7 +42,7 @@
 
     &__input::placeholder,
     &__select:required:invalid {
-        color: rgba(188, 188, 188, 0.8);
+        color: var(--input-placeholder-color, rgba(188, 188, 188, 0.8));
     }
 
     &__option {

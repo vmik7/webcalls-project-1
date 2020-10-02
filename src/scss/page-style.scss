@@ -1,4 +1,20 @@
 
+// INFO
+
+/*
+    This file contains general styles, used on many pages, some variables.
+    Included blocks: 
+        blocks/page-heading.css
+        blocks/page-button.css
+        blocks/content-max-width.css
+        blocks/radius-block.css
+        blocks/form.css
+        blocks/cards-wrapper.css
+        blocks/check.css
+*/
+
+
+
 // MIXINS 
 
 @import 'mixins';
@@ -8,7 +24,7 @@
 // FONTS
 
 // File with @font-face rules
-@import 'fonts';
+// @import 'fonts';
 
 // Google fonts imports
 
@@ -21,11 +37,57 @@
 
 @import 'variables';
 
+:root {
+    --accent-color: #6A25FF;
+    --accent-dark-color: #4305C7;
+
+    --button-bg: var(--accent-color, #6A25FF);
+    --button-color: #fff;
+
+    --button-hover-bg: var(--accent-dark-color, #4305C7);
+    --button-hover-color: #fff;
+    --button-border-radius: 5px;
+    
+    --checkbox-color: var(--accent-color, #6A25FF);
+
+    --label-color: #393939;
+
+    --input-bg: #FCFCFC;
+    --input-border-color: #E7EBF4;
+    --input-placeholder-color: rgba(188, 188, 188, 0.8);
+    --input-color: #222;
+    --input-focus-border-color: rgba(114, 94, 195, 0.6);
+    --input-focus-shadow: 0 0 0 0.2rem rgba(114, 94, 195, 0.2);
+
+    --card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    --card-border-radius: 10px;
+    --card-border-color: #e6ecf0;
+    --card-bg: #fff;
+    --card-title-color: #393939;
+
+    --page-title-color: #22212C;
+    --page-sub-title-color: #BCBCBC;
+
+    --popup-paranja-bg: rgba(75, 75, 75, 0.5);
+    --popup-title-color: #000;
+    --popup-text-color: #B1B1B1;
+    --popup-label-color: #000;
+
+    --dropdown-border-radius: 5px;
+    --dropdown-text-color: #93979E;
+    
+    --tarif-old-price-color: #ED1C24;
+    --tarif-new-price-color: #1DC9B7;
+    --tarif-discond-small-color: rgba(237, 28, 36, 0.6);
+    --tarif-discond-mid-color: rgba(237, 28, 36, 0.8);
+    --tarif-discond-extra-color: rgba(237, 28, 36, 1);
+}
+
 
 
 // NULL & GENERAL
 
-@import 'null';
+// @import 'null';
 
 // _visually-hidden class for elements like default checkbox (it should not be visible, but it should be!)
 ._visually-hidden {
@@ -62,26 +124,25 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
 
 // GRID & CONTAINER
 
-._container {
-    max-width: $max-container-width + px;
-    margin: 0 auto;
-    @media screen and (max-width: $md1+px) {
-        max-width: 970px;
-    }
-    @media screen and (max-width: $md2+px) {
-        max-width: 750px;
-    }
-    @media screen and (max-width: $md3+px) {
-        max-width: none;
-        padding: 0 10px;
-    }
-}
+// ._container {
+//     max-width: $max-container-width + px;
+//     margin: 0 auto;
+//     @media screen and (max-width: $md1+px) {
+//         max-width: 970px;
+//     }
+//     @media screen and (max-width: $md2+px) {
+//         max-width: 750px;
+//     }
+//     @media screen and (max-width: $md3+px) {
+//         max-width: none;
+//         padding: 0 10px;
+//     }
+// }
 
 
-body {
+// body {
 
-    
-}
+// }
 
 
 // Blocks

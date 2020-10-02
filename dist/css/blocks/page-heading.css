@@ -7,7 +7,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  color: #22212C;
+  color: var(--page-title-color, #22212C);
   margin: 0;
 }
 
@@ -15,7 +15,7 @@
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #BCBCBC;
+  color: var(--page-sub-title-color, #BCBCBC);
   margin: 16px 0 10px 0;
 }
 

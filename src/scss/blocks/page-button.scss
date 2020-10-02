@@ -2,9 +2,9 @@
 @import '../variables';
 
 .page-button {
-    background: #6A25FF;
+    background: var(--button-bg, #6A25FF);
     box-shadow: 0px 0px 10px rgba(138, 138, 138, 0.3);
-    border-radius: 5px;
+    border-radius: var(--button-border-radius, 5px);
     border: 0;
 
     height: 40px;
@@ -17,13 +17,13 @@
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    color: #fff;
+    color: var(--button-color, #fff);
 
     transition: all 0.3s ease;
 
     &:hover, &:focus {
-        background: #4305C7;
-        color: #fff;
+        background: var(--button-hover-bg, #4305C7);
+        color: var(--button-hover-color, #fff);
     }
 
     &_wide {

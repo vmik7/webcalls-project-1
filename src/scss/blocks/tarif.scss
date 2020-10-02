@@ -20,7 +20,7 @@
         line-height: 29px;
         text-transform: uppercase;
         text-align: center;
-        color: #6821FF;
+        color: var(--accent-color, #6A25FF);
 
         margin: 0;
 
@@ -138,17 +138,17 @@
         z-index: 1;
 
         background: #fff;
-        border: 1px solid #E7EEF3;
+        border: 1px solid var(--input-border-color, #E7EBF4);
         box-sizing: border-box;
     }
 
     #tarifs-wrapper &__dropdown-menu[x-placement="bottom-start"] {
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 var(--dropdown-border-radius, 5px) var(--dropdown-border-radius, 5px);
         margin-top: -15px;
         padding: 30px 25px 15px 20px;
     }
     #tarifs-wrapper &__dropdown-menu[x-placement="top-start"] {
-        border-radius: 5px 5px 0 0;
+        border-radius: var(--dropdown-border-radius, 5px) var(--dropdown-border-radius, 5px) 0 0;
         margin-bottom: -15px;
         padding: 15px 25px 30px 20px;
     }
@@ -171,7 +171,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        color: #93979E;
+        color: var(--dropdown-text-color, #93979E);
     }
 
     #tarifs-wrapper &__dropdown-discond {
@@ -188,13 +188,13 @@
         line-height: 21px;
 
         &_small {
-            background: rgba(237, 28, 36, 0.6);
+            background: var(--tarif-discond-small-color, rgba(237, 28, 36, 0.6));
         }
         &_mid {
-            background: rgba(237, 28, 36, 0.8);
+            background: var(--tarif-discond-mid-color, rgba(237, 28, 36, 0.8));
         }
         &_extra {
-            background: rgba(237, 28, 36, 1);
+            background: var(--tarif-discond-extra-color, rgba(237, 28, 36, 1));
         }
     }
 
@@ -235,7 +235,7 @@
         font-size: 14px;
         line-height: 17px;
         text-decoration: line-through;
-        color: #ED1C24;
+        color: var(--tarif-old-price-color, #ED1C24);
 
         @media screen and (max-width: $md4 + px) {
             font-size: 12px;
@@ -248,7 +248,7 @@
         font-weight: 900;
         font-size: 25px;
         line-height: 30px;
-        color: #1DC9B7;
+        color: var(--tarif-new-price-color, #1DC9B7);
 
         @media screen and (max-width: $md4 + px) {
             font-size: 20px;

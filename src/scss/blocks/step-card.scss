@@ -32,7 +32,7 @@ body {
         width: 57px;
         height: 57px;
         border-radius: 50%;
-        background: #6A25FF;
+        background: var(--accent-color, #6A25FF);
 
         position: absolute;
         top: 40px;
@@ -57,7 +57,7 @@ body {
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
-        color: #393939;
+        color: var(--card-title-color, #393939);
 
         margin-bottom: 10px;
 
@@ -173,7 +173,7 @@ body {
         font-weight: bold;
         font-size: 18px;
         line-height: 21px;
-        color: #393939;
+        color: var(--card-title-color, #393939);
 
         margin-top: 33px;
         margin-bottom: 30px;
@@ -296,7 +296,7 @@ body {
         font-family: Roboto, sans-serif;
         font-size: 14px;
         line-height: 16px;
-        color: #393939;
+        color:var(--card-title-color, #393939);
 
         &_bold {
             font-weight: 900;
@@ -328,7 +328,7 @@ body {
         font-weight: bold;
         font-size: 14px;
         line-height: 16px;
-        color: #393939;
+        color: var(--card-title-color, #393939);
 
         margin-bottom: 10px;
 
