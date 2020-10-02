@@ -187,7 +187,7 @@
   font-size: 11px;
   line-height: 13px;
   text-align: center;
-  color: #BCBCBC;
+  color: var(--popup-text-color, #BCBCBC);
   margin: 25px 0 0 0;
   min-height: 80px;
 }

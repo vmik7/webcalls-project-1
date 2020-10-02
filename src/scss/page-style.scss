@@ -11,6 +11,7 @@
         blocks/form.css
         blocks/cards-wrapper.css
         blocks/check.css
+        blocks/popup.css
 */
 
 
@@ -46,6 +47,7 @@
 
     --button-hover-bg: var(--accent-dark-color, #4305C7);
     --button-hover-color: #fff;
+    
     --button-border-radius: 5px;
     
     --checkbox-color: var(--accent-color, #6A25FF);
@@ -70,8 +72,8 @@
 
     --popup-paranja-bg: rgba(75, 75, 75, 0.5);
     --popup-title-color: #000;
-    --popup-text-color: #B1B1B1;
     --popup-label-color: #000;
+    --popup-text-color: #B1B1B1;
 
     --dropdown-border-radius: 5px;
     --dropdown-text-color: #93979E;
@@ -154,3 +156,4 @@ a:focus, link:focus, button:focus, input:focus, select:focus, textarea:focus {
 @import 'blocks/form';
 @import 'blocks/cards-wrapper';
 @import 'blocks/check';
+@import 'blocks/popup';
